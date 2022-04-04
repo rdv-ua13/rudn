@@ -1,0 +1,145 @@
+.header {
+	z-index: 1;
+	position: relative;
+	min-width: 375px;
+	width: 100%;
+	background-color: var(--white-color);
+
+	&__container {
+		position: static;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+
+	&__item:not(:last-of-type) {
+		display: flex;
+	}
+	&__hr-vertical {
+		min-width: 1px;
+		min-height: 60px;
+		width: 1px;
+		height: 60px;
+		background: var(--gray3-color);
+		opacity: 0.3;
+	}
+	&__text {
+		font-family: "PF Agora Sans Pro", sans-serif;
+		line-height: 1.2;
+	}
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+}
+.page-search {
+	display: flex;
+}
+.language-version .btn {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+.header-menu {
+	display: flex;
+	flex: 1;
+
+	&__navbar {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__navbar-header {
+		display: flex;
+		padding: 12px 10px;
+	}
+	&__navbar-header span {
+		margin-right: 4px;
+		line-height: 24px;
+	}
+	&__navbar-header.active .icon {
+		transform: scale(-1);
+	}
+}
+@media (max-width: 991.98px) {
+	.header {
+		&__container {
+			padding-top: 15px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.logo {
+		&__item:not(:last-of-type) {
+			margin-right: 15px;
+		}
+		& .icon {
+			min-width: 60px;
+			min-height: 54px;
+			width: 60px;
+			height: 54px;
+		}
+		&__text {
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	.header-actions {
+		&__item:not(:last-of-type) {
+			margin-right: 10px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.header {
+		&__container {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+	}
+
+	.logo {
+		margin-right: auto;
+		margin-bottom: 24px;
+
+		&__item:not(:last-of-type) {
+			margin-right: 28px;
+		}
+		& .icon {
+			min-width: 325px;
+			min-height: 75px;
+			width: 325px;
+			height: 75px;
+		}
+		&__text {
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+
+	.header-actions {
+		margin-bottom: 24px;
+
+		&__item:not(:last-of-type) {
+			margin-right: 16px;
+		}
+	}
+
+	.header-menu {
+		padding-top: 24px;
+		padding-bottom: 24px;
+
+		&__btn {
+			margin-right: auto;
+		}
+		&__navbar-item:not(:last-of-type) {
+			margin-right: 10px;
+		}
+	}
+
+}

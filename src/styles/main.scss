@@ -1,0 +1,22 @@
+/* Подключение стилей проекта */
+@import "helpers/fonts";
+@import "helpers/transition";
+
+/* Подключение стилей swiper */
+@import '../../node_modules/swiper/swiper.scss';
+
+/* ============= common ============= */
+@import "components/common";
+/* ============= common .end/ ============= */
+
+/* ============= header ============= */
+@import "components/header";
+/* ============= header .end/ ============= */
+
+/* ============= main ============= */
+@import "components/main";
+/* ============= main .end/ ============= */
+
+/* ============= footer ============= */
+@import "components/footer";
+/* ============= footer .end/ ============= */
