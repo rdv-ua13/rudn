@@ -3,7 +3,7 @@
 	position: relative;
 	min-width: 375px;
 	width: 100%;
-	background-color: var(--white-color);
+	background-color: transparent;
 
 	&__container {
 		position: static;
@@ -56,7 +56,6 @@
 
 .header-menu {
 	display: flex;
-	flex: 1;
 
 	&__btn {
 		position: relative;
@@ -69,73 +68,23 @@
 		display: flex;
 		justify-content: flex-end;
 	}
-
 	&__collapse-menu {
 		position: absolute;
 		left: 0;
 		min-width: 100%;
 		width: 100%;
-		opacity: 0;
 		background-color: var(--gray2-color);
-		transition: 0.15s ease-in-out;
 	}
-	&__collapse-menu.collapsed,
-	&__btn:not(.header-menu__btn--open) .open.collapsed {
+	&__collapse-menu.collapsed {
 		z-index: -1;
 		display: none;
-		opacity: 0;
 		user-select: none;
 	}
-	&__collapse-menu.open,
-	&__btn--open .open.collapsed {
+	&__collapse-menu.open {
 		z-index: 1;
-		display: block;
-		opacity: 1;
 		user-select: auto;
 	}
-	&__collapse-menu.collapsing,
-	&__btn--open &__collapse-menu.collapsing  {
-		animation: headerMenuCollapsing 0.15s;
-	}
-	&__collapse-menu.opening,
-	&__btn:not(.header-menu__btn--open) &__collapse-menu.opening {
-		animation: headerMenuOpening 0.15s;
-	}
-	@keyframes headerMenuCollapsing {
-		0% {
-			display: block;
-			opacity: 1;
-		}
-		99% {
-			display: block;
-			opacity: 0;
-		}
-		100% {
-			display: none;
-			opacity: 0;
-		}
-	}
-	@keyframes headerMenuOpening {
-		0% {
-			display: none;
-			opacity: 0;
-		}
-		1% {
-			display: block;
-			opacity: 0;
-		}
-		100% {
-			display: block;
-			opacity: 1;
-		}
-	}
 
-
-
-	&__collapse-menu-list {
-		column-count: 3;
-		column-gap: 20px;
-	}
 	&__collapse-menu-item {
 		display: inline-block;
 		width: 100%;
@@ -145,6 +94,9 @@
 	}
 	&__collapse-menu-item-header {
 		font-family: "PF Agora Sans Pro", sans-serif;
+	}
+	&__collapse-menu-item-header span {
+		pointer-events: none;
 	}
 	&__collapse-menu-item ul {
 		margin: 0;
@@ -185,6 +137,10 @@
 	}
 
 	.logo {
+		order: 1;
+		margin-right: auto;
+		margin-bottom: 35px;
+
 		&__item:not(:last-of-type) {
 			margin-right: 15px;
 		}
@@ -201,14 +157,19 @@
 	}
 
 	.header-actions {
+		order: 3;
+
 		&__item:not(:last-of-type) {
 			margin-right: 10px;
 		}
 	}
 
 	.header-menu {
+		order: 2;
+		margin-bottom: 35px;
+
 		&__collapse-menu {
-			top: 182px;
+			top: 178px;
 		}
 		&__collapse-menu-container {
 			padding-top: 45px;
@@ -221,10 +182,21 @@
 			font-size: 20px;
 			line-height: 22px;
 		}
+		&__collapse-menu-item-header span {
+			margin-right: 4px;
+		}
+		&__collapse-menu-item-header:not(.open) .icon {
+			transform: rotate(-90deg);
+		}
 		&__collapse-menu-item-header ~ ul {
+			display: none;
 			padding-top: 20px;
 		}
-		&__collapse-menu-bottom-item:not(:last-of-type) {
+		&__collapse-menu-list,
+		&__collapse-menu-bottom-item:first-of-type {
+			margin-bottom: 40px;
+		}
+		&__collapse-menu-bottom-item:not(:first-of-type):not(:last-of-type) {
 			margin-bottom: 20px;
 		}
 		&__collapse-menu-socials {
@@ -244,6 +216,13 @@
 		}
 		&__collapse-menu-legal li:not(:last-of-type) {
 			margin-bottom: 20px;
+		}
+		&__collapse-menu-committee {
+			margin-right: -16px;
+			margin-left: -16px;
+		}
+		&__collapse-menu-committee .selection-committee__content {
+			width: 250px;
 		}
 	}
 }
@@ -283,6 +262,7 @@
 	}
 
 	.header-menu {
+		flex: 1;
 		padding-top: 24px;
 
 		&__btn {
@@ -293,6 +273,10 @@
 		}
 		&__collapse-menu {
 			top: 220px;
+		}
+		&__collapse-menu-list {
+			column-count: 3;
+			column-gap: 20px;
 		}
 		&__collapse-menu-container {
 			padding-top: 50px;
@@ -332,5 +316,4 @@
 			margin-right: 30px;
 		}
 	}
-
 }

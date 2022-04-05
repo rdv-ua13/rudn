@@ -13,7 +13,8 @@
         <div class="container header__container">
             <div class="logo">
                 <div class="logo__item">
-                    <img class="icon" src="/build/img/logo-rudn-desktop.png" alt="Российский университет дружбы народов RUDN University">
+                    <img class="icon desktop-only" src="/build/img/logo-rudn-desktop.png" alt="Российский университет дружбы народов RUDN University">
+                    <img class="icon mobile-only" src="/build/img/logo-rudn-mobile.png" alt="Российский университет дружбы народов RUDN University">
                 </div>
                 <div class="logo__item">
                     <div class="logo__hr-vertical"></div>
@@ -66,7 +67,7 @@
                     </button>
                 </div>
 
-                <div class="header-menu__navbar">
+                <div class="header-menu__navbar desktop-only">
                     <div class="header-menu__navbar-item">
                         <button class="btn btn-noframe btn-dropdown" type="button">
                             <span class="content-text">О нас</span>
@@ -288,7 +289,7 @@
 
                 <div class="header-menu__collapse-menu collapsed">
                     <div class="container header-menu__collapse-menu-container">
-                        <div class="container header-menu__collapse-menu-list">
+                        <div class="header-menu__collapse-menu-list">
                             <div class="header-menu__collapse-menu-item">
                                 <a class="header-menu__collapse-menu-item-header" href="javascript:;">
                                     <span class="desktop-only">Высшая школа<br>промышленной политики<br>и предпринимательства</span>
@@ -429,9 +430,32 @@
                         </div>
                         <div class="header-menu__collapse-menu-bottom">
                             <div class="header-menu__collapse-menu-bottom-item mobile-only">
-                                <?/* TODO: */?>
-                                Приёмная комиссия
-                                Задать вопрос
+                                <div class="header-menu__collapse-menu-committee selection-committee bg-radial-blue">
+                                    <div class="selection-committee__content">
+                                        <div class="selection-committee__heading">Приёмная комиссия</div>
+                                        <div class="selection-committee__contacts">
+                                            <div class="selection-committee__contacts-item">
+                                                <div class="selection-committee__contacts-title">По вопросам образования</div>
+                                                <p>Тел. +7 (499) 787-38-30 (доб. 2629)</p>
+                                            </div>
+                                            <div class="selection-committee__contacts-item selection-committee__contacts-address">
+                                                <div class="selection-committee__contacts-title">Адрес</div>
+                                                <p>ул. Миклухо-Маклая 6<br>(Главный корпус РУДН, каб. 418)</p>
+                                            </div>
+                                        </div>
+                                        <div class="selection-committee__route">
+                                            <a href="javascript:;">Как к нам добраться?</a>
+                                        </div>
+                                        <div class="selection-committee__btn">
+                                            <button class="btn" type="button">
+                                                <svg class="icon content-icon">
+                                                    <use href="/build/img/sprite.svg#chat"></use>
+                                                </svg>
+                                                <span class="content-text content-text--right">Задать вопрос</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="header-menu__collapse-menu-bottom-item">
                                 <ul class="header-menu__collapse-menu-socials">
