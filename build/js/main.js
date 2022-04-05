@@ -9,10 +9,129 @@ function application() {
     //this.myMap;
 }
 application.prototype.init = function () {
+    this.initBtnDropdown();
+    this.setResponsiveBlockPosition();
+    this.toggleHeaderMenuBtn();
+
     this.initMaskedInput();
     /*this.initFormValidation();
     this.initMap();
     this.initCardDetailsSlider();*/
+}
+
+// Init ".btn-dropdown" behavior
+application.prototype.initBtnDropdown = function () {
+    if ($(".btn-dropdown").length) {
+        $(".btn-dropdown").on("click", function (e) {
+            if ($(".btn-dropdown").is(e.target) && $(".btn-dropdown").has(e.target).length === 0) {
+                if (!$(this).hasClass("btn-dropdown--open")) {
+                    $(".btn-dropdown").removeClass("btn-dropdown--open");
+                    $(this).addClass("btn-dropdown--open");
+
+                    $(".btn-dropdown .content-dropdown").removeClass("content-dropdown--open");
+                    $(this).find(".content-dropdown").addClass("content-dropdown--open");
+                    $(this).find(".content-dropdown").addClass("content-dropdown--transition");
+                    setTimeout(function () {
+                        $(".btn-dropdown .content-dropdown").removeClass("content-dropdown--transition");
+                    }, 150);
+                } else {
+                    $(this).removeClass("btn-dropdown--open");
+                    $(this).find(".content-dropdown").removeClass("content-dropdown--open");
+                }
+            }
+        });
+
+        $(document).on("click", function (e) {
+            if (!$(".btn-dropdown").is(e.target) && $(".btn-dropdown").has(e.target).length === 0
+                || $(".content-dropdown__results .content-dropdown__link").is(e.target)) {
+                $(".btn-dropdown").removeClass("btn-dropdown--open");
+                $(".btn-dropdown .content-dropdown").removeClass("content-dropdown--open");
+            }
+        });
+    }
+}
+// Set the position in the dropdown menu when the rightmost point of the block goes outside the container
+application.prototype.setResponsiveBlockPosition = function () {
+    $(".btn-dropdown").on("click", function () {
+        var container = $(this).closest(".container"),
+            containerRightCoord = container.offset().left + container.width(),
+            popup = $(this).find(".content-dropdown"),
+            popupRightCoord = popup.offset().left + popup.width();
+
+        if (window.matchMedia("(min-width:992px)").matches) {
+            if (containerRightCoord < popupRightCoord) {
+                $(".btn-dropdown .content-dropdown").removeClass("content-dropdown--right");
+                popup.addClass("content-dropdown--right");
+            } else { return; }
+        }
+    });
+    $(".btn-dropdown--open").on("click", function () {
+        $(".btn-dropdown .content-dropdown").removeClass("content-dropdown--right");
+    });
+}
+// Set behavior of ".header-menu__btn"
+application.prototype.toggleHeaderMenuBtn = function () {
+    $(".header-menu__btn").on("click", function () {
+        if (!$(this).hasClass("header-menu__btn--open")) {
+            $("body").addClass("overflow-hidden");
+            $(".header").addClass("header--fixed");
+            // burger btn
+            $(this).addClass("header-menu__btn--open");
+            // burger icon
+            $(this).find(".icon--close").addClass("show");
+            $(this).find(".icon--burger").removeClass("show");
+            // collapse menu
+            $(".header-menu__collapse-menu").removeClass("collapsed");
+            $(".header-menu__collapse-menu").removeClass("collapsing");
+            $(".header-menu__collapse-menu").addClass("opening");
+            setTimeout(function () {
+                $(".header-menu__collapse-menu").removeClass("collapsed");
+                $(".header-menu__collapse-menu").removeClass("collapsing");
+                $(".header-menu__collapse-menu").removeClass("opening");
+                $(".header-menu__collapse-menu").addClass("open");
+            }, 150);
+        } else {
+            $("body").removeClass("overflow-hidden");
+            $(".header").removeClass("header--fixed");
+            // burger btn
+            $(this).removeClass("header-menu__btn--open");
+            // burger icon
+            $(this).find(".icon--burger").addClass("show");
+            $(this).find(".icon--close").removeClass("show");
+            // collapse menu
+            $(".header-menu__collapse-menu").removeClass("open");
+            $(".header-menu__collapse-menu").removeClass("opening");
+            $(".header-menu__collapse-menu").addClass("collapsing");
+            setTimeout(function () {
+                $(".header-menu__collapse-menu").removeClass("open");
+                $(".header-menu__collapse-menu").removeClass("opening");
+                $(".header-menu__collapse-menu").removeClass("collapsing");
+                $(".header-menu__collapse-menu").addClass("collapsed");
+            }, 150);
+        }
+    });
+
+    /*$(document).on("click", function (e) {
+        if (!$(".header-menu__btn .btn").is(e.target) && $(".header-menu__collapse-menu").has(e.target).length === 0) {
+            $("body").removeClass("overflow-hidden");
+            $(".header").removeClass("header--fixed");
+            // burger btn
+            $(".header-menu__btn").removeClass("header-menu__btn--open");
+            // burger icon
+            $(".header-menu__btn").find(".icon--burger").addClass("show");
+            $(".header-menu__btn").find(".icon--close").removeClass("show");
+            // collapse menu
+            $(".header-menu__collapse-menu").removeClass("open");
+            $(".header-menu__collapse-menu").removeClass("opening");
+            $(".header-menu__collapse-menu").addClass("collapsing");
+            setTimeout(function () {
+                $(".header-menu__collapse-menu").removeClass("open");
+                $(".header-menu__collapse-menu").removeClass("opening");
+                $(".header-menu__collapse-menu").removeClass("collapsing");
+                $(".header-menu__collapse-menu").addClass("collapsed");
+            }, 150);
+        }
+    });*/
 }
 
 // Mobile number mask
@@ -51,12 +170,12 @@ application.prototype.initMap = function () {
                 controls: [],
                 zoom: 16,
             }, {
-                searchControlProvider: 'yandex#search'
+                searchControlProvider: "yandex#search"
             }),
             myPlacemark = new ymaps.Placemark([45.866693, 40.103282]);
             myMap.geoObjects.add(myPlacemark);
-            myMap.controls.add('zoomControl'),
-            myMap.behaviors.disable('scrollZoom');
+            myMap.controls.add("zoomControl"),
+            myMap.behaviors.disable("scrollZoom");
         }
     }
 }
@@ -86,7 +205,7 @@ application.prototype.initCardDetailsSlider = function () {
         });
 
         var thumbs = new Swiper(".cd-slider-thumb", {
-            slidesPerView: 'auto',
+            slidesPerView: "auto",
             spaceBetween: 15,
             watchOverflow: true,
             watchSlidesProgress: true,
