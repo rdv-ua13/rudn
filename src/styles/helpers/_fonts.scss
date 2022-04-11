@@ -1,23 +1,35 @@
 @font-face {
-	font-family: "PF Agora Sans Pro", sans-serif;
-	src: url("/build/fonts/PFAgoraSansPro-Regular.ttf") format("truetype");
-	font-weight: 400;
+	font-family: "PF Agora Sans Pro";
+	src: url("/build/fonts/PFAgoraSansPro-Bold.eot");
+	src: local("/build/fonts/PFAgoraSansPro-Bold"),
+	url("/build/fonts/PFAgoraSansPro-Bold.eot?#iefix") format("embedded-opentype"),
+	url("/build/fonts/PFAgoraSansPro-Bold.woff2") format("woff2"),
+	url("/build/fonts/PFAgoraSansPro-Bold.woff") format("woff"),
+	url("/build/fonts/PFAgoraSansPro-Bold.ttf") format("truetype");
+	font-weight: bold;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
-	font-family: "PF Agora Sans Pro", sans-serif;
-	src: url("/build/fonts/PFAgoraSansPro-Medium.ttf") format("truetype");
+	font-family: "PF Agora Sans Pro";
+	src: url("/build/fonts/PFAgoraSansPro-Medium.eot");
+	src: local("/build/fonts/PFAgoraSansPro-Medium"),
+	url("/build/fonts/PFAgoraSansPro-Medium.eot?#iefix") format("embedded-opentype"),
+	url("/build/fonts/PFAgoraSansPro-Medium.woff2") format("woff2"),
+	url("/build/fonts/PFAgoraSansPro-Medium.woff") format("woff"),
+	url("/build/fonts/PFAgoraSansPro-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
-	font-family: "PF Agora Sans Pro", sans-serif;
-	src: url("/build/fonts/PFAgoraSansPro-Bold.ttf") format("truetype");
-	font-weight: 700;
+	font-family: "PF Agora Sans Pro";
+	src: url("/build/fonts/PFAgoraSansPro-Regular.eot");
+	src: local("/build/fonts/PFAgoraSansPro-Regular"),
+	url("/build/fonts/PFAgoraSansPro-Regular.eot?#iefix") format("embedded-opentype"),
+	url("/build/fonts/PFAgoraSansPro-Regular.woff2") format("woff2"),
+	url("/build/fonts/PFAgoraSansPro-Regular.woff") format("woff"),
+	url("/build/fonts/PFAgoraSansPro-Regular.ttf") format("truetype");
+	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: "Open Sans", sans-serif;
