@@ -20,7 +20,7 @@
 	&__committee .selection-committee__contacts-title {
 		opacity: 0.7;
 	}
-	&__committee:not(.footer__committee-subscription) .selection-committee__btn .btn {
+	&__committee:not(.footer__committee-subscription) .selection-committee__btn .icon {
 		transform: rotate(-90deg);
 	}
 	&__committee:not(.footer__committee-subscription) .selection-committee__contacts:first-of-type .selection-committee__contacts-item:last-of-type {
