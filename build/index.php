@@ -1,6 +1,6 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/header.php'); ?>
 
-<div class="block-mb-xsmall">
+<div class="block-mb-small">
     <div class="container px-0-mobile">
         <div class="swiper-container main-slider js-main-slider">
             <div class="swiper-wrapper">
@@ -122,7 +122,7 @@
     <div class="container">
         <div class="infoblock-wrapper">
             <div class="infoblock bg-radial-blue">
-                <div class="infoblock__title">Приемная кампания 2021</div>
+                <div class="h3 infoblock__title">Приемная кампания 2021</div>
                 <div class="infoblock__key-links">
                     <a class="infoblock__link" href="javascript:;">Какие документы нужны для поступления?</a>
                     <a class="infoblock__link" href="javascript:;">Кафедры</a>
@@ -136,7 +136,7 @@
                 </a>
             </div>
             <div class="infoblock bg-radial-blue">
-                <div class="infoblock__title">Учебный процесс</div>
+                <div class="h3 infoblock__title">Учебный процесс</div>
                 <div class="infoblock__key-links">
                     <a class="infoblock__link" href="javascript:;">Расписание занятий</a>
                     <a class="infoblock__link" href="javascript:;">Практики и стажировки</a>
@@ -154,7 +154,7 @@
 </div>
 
 <div class="block-mb">
-    <div class="container pr-0-mobile">
+    <div class="container">
         <div class="news">
             <div class="news-header">
                 <div class="h2 news-header__title">Наши новости и события</div>
@@ -176,55 +176,56 @@
                     </div>
                 </div>
             </div>
-
-            <div class="swiper-container news-slider js-news-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="news-slider__date">17 июля 2021</div>
-                        <div class="news-slider__title">Химики РУДН разработали новый путь синтеза веществ для фармацевтики</div>
-                        <div class="news-slider__preview">Химики РУДН предложили универсальный способ синтеза производных тиеноиндолизинов. Свойства этих веществ позволяют использовать их для создания антибактериальных для создания антибактериальных для создания антибактериальных</div>
-                        <div class="news-slider__more">
-                            <a class="link link-underline" href="javascript:;">Читать полностью</a>
+            <div class="out-container-right-mobile">
+                <div class="swiper-container news-slider js-news-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news-slider__date">17 июля 2021</div>
+                            <div class="h5 news-slider__title">Химики РУДН разработали новый путь синтеза веществ для фармацевтики</div>
+                            <div class="news-slider__preview">Химики РУДН предложили универсальный способ синтеза производных тиеноиндолизинов. Свойства этих веществ позволяют использовать их для создания антибактериальных для создания антибактериальных для создания антибактериальных</div>
+                            <div class="news-slider__more">
+                                <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news-slider__date">17 июля 2021</div>
-                        <div class="news-slider__title">РУДН выделяет 40 грантов на бесплатное обучение</div>
-                        <div class="news-slider__preview">Абитуриенты, которые победили на олимпиадах или получили от 290 баллов на ЕГЭ, но не поступили «на бюджет», могут выиграть грант для оплаты всего периода обучения в РУДН для оплаты всего периода обучения в РУДН для оплаты всего периода обучения в РУДН</div>
-                        <div class="news-slider__more">
-                            <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                        <div class="swiper-slide">
+                            <div class="news-slider__date">17 июля 2021</div>
+                            <div class="h5 news-slider__title">РУДН выделяет 40 грантов на бесплатное обучение</div>
+                            <div class="news-slider__preview">Абитуриенты, которые победили на олимпиадах или получили от 290 баллов на ЕГЭ, но не поступили «на бюджет», могут выиграть грант для оплаты всего периода обучения в РУДН для оплаты всего периода обучения в РУДН для оплаты всего периода обучения в РУДН</div>
+                            <div class="news-slider__more">
+                                <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news-slider__date">17 июля 2021</div>
-                        <div class="news-slider__title">Поддержка, понимание, доверие: кабинет психологической помощи РУДН</div>
-                        <div class="news-slider__preview">В РУДН для студентов и сотрудников работает кабинет психологической помощи. Психолог бесплатно проводит индивидуальные консультации на русском, английском и французском языках.</div>
-                        <div class="news-slider__more">
-                            <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                        <div class="swiper-slide">
+                            <div class="news-slider__date">17 июля 2021</div>
+                            <div class="h5 news-slider__title">Поддержка, понимание, доверие: кабинет психологической помощи РУДН</div>
+                            <div class="news-slider__preview">В РУДН для студентов и сотрудников работает кабинет психологической помощи. Психолог бесплатно проводит индивидуальные консультации на русском, английском и французском языках.</div>
+                            <div class="news-slider__more">
+                                <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news-slider__date">17 июля 2021</div>
-                        <div class="news-slider__title">Химики РУДН разработали новый путь синтеза веществ для фармацевтики</div>
-                        <div class="news-slider__preview">Химики РУДН предложили универсальный способ синтеза производных тиеноиндолизинов. Свойства этих веществ позволяют использовать их для создания антибактериальных... для создания антибактериальных</div>
-                        <div class="news-slider__more">
-                            <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                        <div class="swiper-slide">
+                            <div class="news-slider__date">17 июля 2021</div>
+                            <div class="h5 news-slider__title">Химики РУДН разработали новый путь синтеза веществ для фармацевтики</div>
+                            <div class="news-slider__preview">Химики РУДН предложили универсальный способ синтеза производных тиеноиндолизинов. Свойства этих веществ позволяют использовать их для создания антибактериальных... для создания антибактериальных</div>
+                            <div class="news-slider__more">
+                                <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news-slider__date">17 июля 2021</div>
-                        <div class="news-slider__title">РУДН выделяет 40 грантов на бесплатное обучение</div>
-                        <div class="news-slider__preview">Абитуриенты, которые победили на олимпиадах или получили от 290 баллов на ЕГЭ, но не поступили «на бюджет», могут выиграть грант для оплаты всего периода обучения в РУДН... для оплаты всего периода обучения в РУДН</div>
-                        <div class="news-slider__more">
-                            <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                        <div class="swiper-slide">
+                            <div class="news-slider__date">17 июля 2021</div>
+                            <div class="h5 news-slider__title">РУДН выделяет 40 грантов на бесплатное обучение</div>
+                            <div class="news-slider__preview">Абитуриенты, которые победили на олимпиадах или получили от 290 баллов на ЕГЭ, но не поступили «на бюджет», могут выиграть грант для оплаты всего периода обучения в РУДН... для оплаты всего периода обучения в РУДН</div>
+                            <div class="news-slider__more">
+                                <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news-slider__date">17 июля 2021</div>
-                        <div class="news-slider__title">Поддержка, понимание, доверие: кабинет психологической помощи РУДН</div>
-                        <div class="news-slider__preview">В РУДН для студентов и сотрудников работает кабинет психологической помощи. Психолог бесплатно проводит индивидуальные консультации на русском, английском и французском языках.</div>
-                        <div class="news-slider__more">
-                            <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                        <div class="swiper-slide">
+                            <div class="news-slider__date">17 июля 2021</div>
+                            <div class="h5 news-slider__title">Поддержка, понимание, доверие: кабинет психологической помощи РУДН</div>
+                            <div class="news-slider__preview">В РУДН для студентов и сотрудников работает кабинет психологической помощи. Психолог бесплатно проводит индивидуальные консультации на русском, английском и французском языках.</div>
+                            <div class="news-slider__more">
+                                <a class="link link-underline" href="javascript:;">Читать полностью</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -307,7 +308,7 @@
                             <img src="/build/img/events-img3.jpg" alt="X Российский гомеопатический съезд">
                         </div>
                         <div class="events-calendar-slider__descr">
-                            <div class="events-calendar-slider__descr-title">X Российский гомеопатический съезд</div>
+                            <div class="h5 events-calendar-slider__descr-title">X Российский гомеопатический съезд</div>
                             <div class="events-calendar-slider__descr-content">Российский университет дружбы народов совместно с Минобрнауки России и Исполнительным комитетом СНГ проводит Научно-методический симпозиум по вопросам партнерства образовательных учреждений (далее – Симпозиум).</div>
                         </div>
                         <div class="events-calendar-slider__action">
@@ -350,7 +351,7 @@
                             <img src="/build/img/events-img2.jpg" alt="X Всероссийская конференция «Глобальные векторы развития фармацевтического образования, науки в практики в условиях непредсказуемой внешней среды и цифровизации»">
                         </div>
                         <div class="events-calendar-slider__descr">
-                            <div class="events-calendar-slider__descr-title">X Всероссийская конференция «Глобальные векторы развития фармацевтического образования, науки в практики в условиях непредсказуемой внешней среды и цифровизации»</div>
+                            <div class="h5 events-calendar-slider__descr-title">X Всероссийская конференция «Глобальные векторы развития фармацевтического образования, науки в практики в условиях непредсказуемой внешней среды и цифровизации»</div>
                             <div class="events-calendar-slider__descr-content">Конференция проводится кафедрой управления и экономики фармации медицинского института и кафедрой менеджмента и маркетинга в фармации ФНМО РУДН при организационно-технической и финансовой поддержке ООО ТНК СИЛМА - отечественного производителя лекарственных средств. Конференция проводится кафедрой управления и экономики фармации медицинского института и кафедрой менеджмента и маркетинга в фармации ФНМО РУДН при организационно-технической и финансовой поддержке ООО ТНК СИЛМА - отечественного производителя лекарственных средств.</div>
                         </div>
                         <div class="events-calendar-slider__action">
@@ -393,7 +394,7 @@
                             <img src="/build/img/events-img3.jpg" alt="Научно-методический симпозиум по вопросам партнёрства образовательных учреждений">
                         </div>
                         <div class="events-calendar-slider__descr">
-                            <div class="events-calendar-slider__descr-title">Научно-методический симпозиум по вопросам партнёрства образовательных учреждений</div>
+                            <div class="h5 events-calendar-slider__descr-title">Научно-методический симпозиум по вопросам партнёрства образовательных учреждений</div>
                             <div class="events-calendar-slider__descr-content">Российский университет дружбы народов совместно с Минобрнауки России и Исполнительным комитетом СНГ проводит Научно-методический симпозиум по вопросам партнерства образовательных учреждений (далее – Симпозиум).</div>
                         </div>
                         <div class="events-calendar-slider__action">
@@ -436,7 +437,7 @@
                             <img src="/build/img/events-img2.jpg" alt="X Всероссийская конференция «Глобальные векторы развития фармацевтического образования, науки в практики в условиях непредсказуемой внешней среды и цифровизации»">
                         </div>
                         <div class="events-calendar-slider__descr">
-                            <div class="events-calendar-slider__descr-title">X Всероссийская конференция «Глобальные векторы развития фармацевтического образования, науки в практики в условиях непредсказуемой внешней среды и цифровизации»</div>
+                            <div class="h5 events-calendar-slider__descr-title">X Всероссийская конференция «Глобальные векторы развития фармацевтического образования, науки в практики в условиях непредсказуемой внешней среды и цифровизации»</div>
                             <div class="events-calendar-slider__descr-content">Конференция проводится кафедрой управления и экономики фармации медицинского института и кафедрой менеджмента и маркетинга в фармации ФНМО РУДН при организационно-технической и финансовой поддержке ООО ТНК СИЛМА - отечественного производителя лекарственных средств. Конференция проводится кафедрой управления и экономики фармации медицинского института и кафедрой менеджмента и маркетинга в фармации ФНМО РУДН при организационно-технической и финансовой поддержке ООО ТНК СИЛМА - отечественного производителя лекарственных средств.</div>
                         </div>
                         <div class="events-calendar-slider__action">
@@ -479,7 +480,7 @@
                             <img src="/build/img/events-img3.jpg" alt="Научно-методический симпозиум по вопросам партнёрства образовательных учреждений">
                         </div>
                         <div class="events-calendar-slider__descr">
-                            <div class="events-calendar-slider__descr-title">Научно-методический симпозиум по вопросам партнёрства образовательных учреждений</div>
+                            <div class="h5 events-calendar-slider__descr-title">Научно-методический симпозиум по вопросам партнёрства образовательных учреждений</div>
                             <div class="events-calendar-slider__descr-content">Российский университет дружбы народов совместно с Минобрнауки России и Исполнительным комитетом СНГ проводит Научно-методический симпозиум по вопросам партнерства образовательных учреждений (далее – Симпозиум).</div>
                         </div>
                         <div class="events-calendar-slider__action">
@@ -520,14 +521,13 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
 <div class="container-fluid bg-radial-blue">
     <div class="jointly">
-        <div class="block-mb container">
-            <div class="jointly-projects">
+        <div class="container">
+            <div class="block-mb jointly-projects">
                 <div class="block-header-control">
                     <div class="h2 block-header-control__title">Партнеры и проекты</div>
                     <div class="block-header-control__action">
@@ -553,12 +553,12 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" style="background-image: url('/build/img/jointly-projects-img1.jpg')">
                             <div class="jointly-projects-slider__slide-content">
-                                <div class="jointly-projects-slider__descr">Разработка низкотемпературных технологий синтеза оксидных светоизлучающих диодов нового поколения</div>
+                                <div class="h5 jointly-projects-slider__descr">Разработка низкотемпературных технологий синтеза оксидных светоизлучающих диодов нового поколения</div>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('/build/img/jointly-projects-img2.jpg')">
                             <div class="jointly-projects-slider__slide-content">
-                                <div class="jointly-projects-slider__descr">Разработка технологии улучшения показателей двигателей внутреннего сгорания за счет совершенствования диагностирования и технического обслуживания механизмов и систем</div>
+                                <div class="h5 jointly-projects-slider__descr">Разработка технологии улучшения показателей двигателей внутреннего сгорания за счет совершенствования диагностирования и технического обслуживания механизмов и систем</div>
                                 <div class="jointly-projects-slider__hr"></div>
                                 <div class="jointly-projects-slider__title">
                                     <div class="jointly-projects-slider__title-label">Партнер проекта:</div>
@@ -568,17 +568,17 @@
                         </div>
                         <div class="swiper-slide" style="background-image: url('/build/img/jointly-projects-img3.jpg')">
                             <div class="jointly-projects-slider__slide-content">
-                                <div class="jointly-projects-slider__descr">Развитие современных лазерных технологий в условиях цифровой экономики</div>
+                                <div class="h5 jointly-projects-slider__descr">Развитие современных лазерных технологий в условиях цифровой экономики</div>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('/build/img/jointly-projects-img1.jpg')">
                             <div class="jointly-projects-slider__slide-content">
-                                <div class="jointly-projects-slider__descr">Разработка низкотемпературных технологий синтеза оксидных светоизлучающих диодов нового поколения</div>
+                                <div class="h5 jointly-projects-slider__descr">Разработка низкотемпературных технологий синтеза оксидных светоизлучающих диодов нового поколения</div>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('/build/img/jointly-projects-img2.jpg')">
                             <div class="jointly-projects-slider__slide-content">
-                                <div class="jointly-projects-slider__descr">Разработка технологии улучшения показателей двигателей внутреннего сгорания за счет совершенствования диагностирования и технического обслуживания механизмов и систем</div>
+                                <div class="h5 jointly-projects-slider__descr">Разработка технологии улучшения показателей двигателей внутреннего сгорания за счет совершенствования диагностирования и технического обслуживания механизмов и систем</div>
                                 <div class="jointly-projects-slider__hr"></div>
                                 <div class="jointly-projects-slider__title">
                                     <div class="jointly-projects-slider__title-label">Партнер проекта:</div>
@@ -588,18 +588,15 @@
                         </div>
                         <div class="swiper-slide" style="background-image: url('/build/img/jointly-projects-img3.jpg')">
                             <div class="jointly-projects-slider__slide-content">
-                                <div class="jointly-projects-slider__descr">Развитие современных лазерных технологий в условиях цифровой экономики</div>
+                                <div class="h5 jointly-projects-slider__descr">Развитие современных лазерных технологий в условиях цифровой экономики</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container pr-0-mobile">
             <div class="jointly-partners">
-                <div class="jointly-partners-slider-wrapper">
-                    <div class="swiper-container jointly-partners-slider js-jointly-partners-slider">
+                <div class="out-container-right-mobile basic-slider-wrapper">
+                    <div class="swiper-container basic-slider jointly-partners-slider js-jointly-partners-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" style="background-image: url('')"></div>
                             <div class="swiper-slide" style="background-image: url('')"></div>
@@ -658,6 +655,5 @@
         </div>
     </div>
 </div>
-
 
 <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/footer.php'); ?>

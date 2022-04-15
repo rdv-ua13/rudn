@@ -432,7 +432,7 @@
                             <div class="header-menu__collapse-menu-bottom-item mobile-only">
                                 <div class="header-menu__collapse-menu-committee selection-committee bg-radial-blue">
                                     <div class="selection-committee__content">
-                                        <div class="selection-committee__heading">Приёмная комиссия</div>
+                                        <div class="h5 selection-committee__heading">Приёмная комиссия</div>
                                         <div class="selection-committee__contacts">
                                             <div class="selection-committee__contacts-item">
                                                 <div class="selection-committee__contacts-title">По вопросам образования</div>

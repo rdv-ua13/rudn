@@ -3,7 +3,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__committee selection-committee">
-                <div class="selection-committee__heading">Приёмная комиссия</div>
+                <div class="h5 selection-committee__heading">Приёмная комиссия</div>
                 <div class="selection-committee__content">
                     <div class="selection-committee__contacts">
                         <div class="selection-committee__contacts-item selection-committee__contacts-address mb-auto-desktop">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="footer__committee footer__committee-subscription selection-committee">
-                <div class="selection-committee__heading">Подпишитесь на новости</div>
+                <div class="h5 selection-committee__heading">Подпишитесь на новости</div>
                 <div class="selection-committee__content flex-fill-desktop">
                     <div class="selection-committee__contacts h-100-desktop">
                         <div class="selection-committee__contacts-item mb-auto-desktop">

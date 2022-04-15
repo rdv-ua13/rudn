@@ -55,13 +55,15 @@
     </head>
 
     <body>
-    <!--<div class="logo">
-        <img src="/build/img/logo.png" alt="">
-    </div>-->
+    <div class="logo">
+        <img src="/build/img/logo-rudn-desktop.png" alt="">
+    </div>
 
     <div>
         <ul>
             <li><a href="/build/index.php" target="_blank">Главная</a></li>
+            <br>
+            <li><a href="/build/about-main.php" target="_blank">О нас - главная</a></li>
         </ul>
     </div>
     </body>

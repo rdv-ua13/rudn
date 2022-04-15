@@ -16,9 +16,6 @@ application.prototype.init = function () {
     this.initSliders();
 
     this.initMaskedInput();
-    /*this.initFormValidation();
-    this.initMap();
-    this.initCardDetailsSlider();*/
 }
 
 // Init ".btn-dropdown" behavior
@@ -73,12 +70,12 @@ application.prototype.setResponsiveBlockPosition = function () {
 }
 // Set behavior of ".header-menu__btn"
 application.prototype.toggleHeaderMenuBtn = function () {
-    $(".header-menu__btn").on("click", function () {
-        if (!$(this).hasClass("header-menu__btn--open")) {
+    $(".header-menu__btn .btn").on("click", function () {
+        if (!$(this).closest(".header-menu__btn").hasClass("header-menu__btn--open")) {
             $("body").addClass("overflow-hidden");
             $(".header").addClass("header--fixed");
             // burger btn
-            $(this).addClass("header-menu__btn--open");
+            $(this).closest(".header-menu__btn").addClass("header-menu__btn--open");
             // burger icon
             $(this).find(".icon--close").addClass("show");
             $(this).find(".icon--burger").removeClass("show");
@@ -90,7 +87,7 @@ application.prototype.toggleHeaderMenuBtn = function () {
             $("body").removeClass("overflow-hidden");
             $(".header").removeClass("header--fixed");
             // burger btn
-            $(this).removeClass("header-menu__btn--open");
+            $(this).closest(".header-menu__btn").removeClass("header-menu__btn--open");
             // burger icon
             $(this).find(".icon--burger").addClass("show");
             $(this).find(".icon--close").removeClass("show");
@@ -104,21 +101,6 @@ application.prototype.toggleHeaderMenuBtn = function () {
             $(".header-menu__collapse-menu-item-header").next("ul").css({ "display" : "" });
         }
     });
-
-    /*$(document).on("click", function (e) {
-        if (!$(".header-menu__btn .btn").is(e.target) && $(".header-menu__collapse-menu").has(e.target).length === 0) {
-            $("body").removeClass("overflow-hidden");
-            $(".header").removeClass("header--fixed");
-            // burger btn
-            $(".header-menu__btn").removeClass("header-menu__btn--open");
-            // burger icon
-            $(".header-menu__btn").find(".icon--burger").addClass("show");
-            $(".header-menu__btn").find(".icon--close").removeClass("show");
-            // collapse menu
-            $(".header-menu__collapse-menu.open").fadeOut(150);
-            $(".header-menu__collapse-menu").removeClass("open").addClass("collapsed");
-        }
-    });*/
 }
 // Set behavior of ".header-menu__collapse-menu-item-header"
 application.prototype.toggleCollapseMenuItemHeader = function () {
@@ -142,8 +124,7 @@ application.prototype.toggleCollapseMenuItemHeader = function () {
 application.prototype.initSliders = function () {
     // Main slider
     if ($(".js-main-slider").length) {
-        var mainSettings = {
-            spaceBetween: 30,
+        var mainSliderSettings = {
             effect: "fade",
             navigation: {
                 nextEl: ".main-slider .swiper-button-next",
@@ -152,33 +133,74 @@ application.prototype.initSliders = function () {
             pagination: {
                 el: ".main-slider .swiper-pagination",
                 clickable: true,
-            },
-        },
-        mainSlider = new Swiper(".js-main-slider", mainSettings);
+            }
+        };
+        new Swiper(".js-main-slider", mainSliderSettings);
     }
 
     // News slider
     if ($(".js-news-slider").length) {
-        var newsSettings = {
-            slidesPerView: 1.2,
-            spaceBetween: 30,
+        var newsSliderSettings = {
+            slidesPerView: "auto",
             navigation: {
                 nextEl: ".news .swiper-button-next",
                 prevEl: ".news .swiper-button-prev",
-            },
-            breakpoints: {
-                992: {
-                    spaceBetween: 24,
-                    slidesPerView: 3,
-                },
             }
-        },
-        newsSlider = new Swiper(".js-news-slider", newsSettings);
+        };
+        new Swiper(".js-news-slider", newsSliderSettings);
+    }
+
+    // Events-calendar slider
+    if ($(".js-events-calendar-slider").length) {
+        var eventsCalendarSliderSettingsHorizontal = {
+                autoHeight: true,
+                direction: "horizontal",
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".events-calendar .swiper-button-next",
+                    prevEl: ".events-calendar .swiper-button-prev",
+                },
+            },
+            eventsCalendarSliderSettingsVertical = {
+                autoHeight: true,
+                direction: "vertical",
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: ".events-calendar .swiper-button-next",
+                    prevEl: ".events-calendar .swiper-button-prev",
+                },
+            },
+            eventsCalendarSlider = null;
+
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSliderSettingsVertical);
+        }
+        else if (window.matchMedia("(max-width: 991.98px)").matches) {
+            eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSliderSettingsHorizontal);
+        }
+
+        reinitSlider();
+        $(window).on("resize", reinitSlider);
+
+        function reinitSlider() {
+            if (window.matchMedia("(min-width: 992px)").matches) {
+                eventsCalendarSlider.destroy();
+                eventsCalendarSlider = null;
+                eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSliderSettingsVertical);
+            }
+            else if (window.matchMedia("(max-width: 991.98px)").matches) {
+                eventsCalendarSlider.destroy();
+                eventsCalendarSlider = null;
+                eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSliderSettingsHorizontal);
+            }
+        }
     }
 
     // Jointly projects slider
     if ($(".js-jointly-projects-slider").length) {
-        var jointlyProjectsSettings = {
+        var jointlyProjectsSliderSettings = {
             slidesPerView: 1,
             spaceBetween: 20,
             navigation: {
@@ -186,83 +208,86 @@ application.prototype.initSliders = function () {
                 prevEl: ".jointly-projects .swiper-button-prev",
             },
             breakpoints: {
-                992: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
                     slidesPerView: 3,
                 },
             }
-        },
-        jointlyProjectsSlider = new Swiper(".js-jointly-projects-slider", jointlyProjectsSettings);
+        };
+        new Swiper(".js-jointly-projects-slider", jointlyProjectsSliderSettings);
     }
 
     // Jointly partners slider
     if ($(".js-jointly-partners-slider").length) {
-        var jointlyPartnersSettings = {
-            slidesPerView: 1.65,
-            spaceBetween: 20,
+        var jointlyPartnersSliderSettings = {
+            slidesPerView: "auto",
             navigation: {
                 nextEl: ".jointly-partners .swiper-button-next",
                 prevEl: ".jointly-partners .swiper-button-prev",
             },
-            breakpoints: {
-                992: {
-                    slidesPerView: 6,
-                },
-            }
-        },
-        jointlyPartnersSlider = new Swiper(".js-jointly-partners-slider", jointlyPartnersSettings);
+        };
+        new Swiper(".js-jointly-partners-slider", jointlyPartnersSliderSettings);
     }
 
-    // Events-calendar slider
-    if ($(".js-events-calendar-slider").length) {
-        var eventsCalendarSettingsHHorizontal = {
-            autoHeight: true,
-            direction: "horizontal",
+    // Sidebar slider
+    if ($(".js-sidebar-slider").length) {
+        var sidebarSliderSettings = {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            loop: true,
             slidesPerView: 1,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: ".events-calendar .swiper-button-next",
-                prevEl: ".events-calendar .swiper-button-prev",
-            },
-        },
-        eventsCalendarSettingsVertical = {
-            autoHeight: true,
-            direction: "vertical",
-            slidesPerView: "auto",
             spaceBetween: 0,
-            navigation: {
-                nextEl: ".events-calendar .swiper-button-next",
-                prevEl: ".events-calendar .swiper-button-prev",
+            pagination: {
+                el: ".js-sidebar-slider .swiper-pagination",
+                clickable: true
             },
-        },
-        eventsCalendarSlider = null;
+            on: {
+                init() {
+                    this.el.addEventListener("mouseenter", () => {
+                        this.autoplay.stop();
+                    });
 
-        if (window.matchMedia("(min-width: 992px)").matches) {
-            eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSettingsVertical);
-        }
-        else if (window.matchMedia("(max-width: 991.98px)").matches) {
-            eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSettingsHHorizontal);
-        }
+                    this.el.addEventListener("mouseleave", () => {
+                        this.autoplay.start();
+                    });
+                }
+            },
+        };
+        new Swiper(".js-sidebar-slider", sidebarSliderSettings);
+    }
 
-        reinitSlider();
-        $(window).on('resize', reinitSlider);
+    // About-main slider
+    if ($(".js-about-main-slider").length) {
+        var aboutMainSliderSettings = {
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: ".js-about-main-slider-wrapper .swiper-button-next",
+                prevEl: ".js-about-main-slider-wrapper .swiper-button-prev",
+            },
+        };
+        new Swiper(".js-about-main-slider", aboutMainSliderSettings);
+    }
 
-        function reinitSlider() {
-            if (window.matchMedia("(min-width: 992px)").matches) {
-                eventsCalendarSlider.destroy();
-                eventsCalendarSlider = null;
-                eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSettingsVertical);
-            }
-            else if (window.matchMedia("(max-width: 991.98px)").matches) {
-                eventsCalendarSlider.destroy();
-                eventsCalendarSlider = null;
-                eventsCalendarSlider = new Swiper(".js-events-calendar-slider", eventsCalendarSettingsHHorizontal);
-            }
-        }
-
+    // Awards slider
+    if ($(".js-awards-slider").length) {
+        var awardsSliderSettings = {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".js-awards-slider .swiper-button-next",
+                prevEl: ".js-awards-slider .swiper-button-prev",
+            },
+        };
+        new Swiper(".js-awards-slider", awardsSliderSettings);
     }
 
 
 }
+
+
 
 // Mobile number mask
 application.prototype.initMaskedInput = function () {
