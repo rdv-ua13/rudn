@@ -448,7 +448,7 @@
                                         </div>
                                         <div class="selection-committee__btn">
                                             <button class="btn" type="button">
-                                                <svg class="icon content-icon">
+                                                <svg class="icon">
                                                     <use href="/build/img/sprite.svg#chat"></use>
                                                 </svg>
                                                 <span class="content-text content-text--right">Задать вопрос</span>

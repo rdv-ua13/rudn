@@ -14,6 +14,7 @@ application.prototype.init = function () {
     this.toggleHeaderMenuBtn();
     this.toggleCollapseMenuItemHeader();
     this.initSliders();
+    this.initTabs();
 
     this.initMaskedInput();
 }
@@ -284,9 +285,63 @@ application.prototype.initSliders = function () {
         new Swiper(".js-awards-slider", awardsSliderSettings);
     }
 
+    // About-history sliders
+    if ($(".about-history-slider").length) {
+        $(".about-history-slider").each(function (i) {
+            var sliderID = $(".about-history-slider").eq(i).data("id"),
+                aboutHistorySliderSettings = {
+                    slidesPerView: "auto",
+                    navigation: {
+                        nextEl: ".js-about-history-" + sliderID + "-slider ~ .swiper-navigation .swiper-button-next",
+                        prevEl: ".js-about-history-" + sliderID + "-slider ~ .swiper-navigation .swiper-button-prev",
+                    }
+                };
+            new Swiper(".js-about-history-" + sliderID + "-slider", aboutHistorySliderSettings);
+        });
+
+        scrollConditionCheck();
+        $(window).on("resize", scrollConditionCheck);
+
+        function scrollConditionCheck() {
+            $(".about-history-slider").each(function (i) {
+                var sliderID = $(".about-history-slider").eq(i).data("id"),
+                    slider = $(".js-about-history-" + sliderID + "-slider"),
+                    sliderWidth = slider.width(),
+                    numOfSlides = slider.find(".swiper-slide").length,
+                    sumSlidesWidth = (numOfSlides * 179) - 20;
+
+                if (sliderWidth >= sumSlidesWidth) {
+                    slider.siblings(".swiper-navigation").addClass("swiper-navigation-none");
+                } else if (sliderWidth < sumSlidesWidth) {
+                    slider.siblings(".swiper-navigation").removeClass("swiper-navigation-none");
+                }
+            });
+        }
+    }
+
 
 }
+// Init tabs
+application.prototype.initTabs = function () {
+    if ($(".tabs").length) {
+        // adding class "selected" to active tab
+        $(".tabs-heading__item").on("click", function () {
+            $(this).closest(".tabs-heading").find(".tabs-heading__item").removeClass("selected");
+            $(this).addClass("selected");
+        });
 
+        // show content of "selected" item
+        tabsContentBinding();
+        function tabsContentBinding() {
+            var currentSelected = 1;
+            $(".tabs-heading__item").on("click", function () {
+                currentSelected = $(this).data("target");
+                $(this).closest(".tabs").find(".tab-content__section").removeClass("active");
+                $(this).closest(".tabs").find(".tab-content__section[data-id='" + currentSelected + "']").addClass("active");
+            });
+        }
+    }
+}
 
 
 // Mobile number mask

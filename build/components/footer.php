@@ -13,7 +13,7 @@
                         <div class="selection-committee__contacts-item">
                             <div class="selection-committee__btn">
                                 <button class="btn btn-square" type="button">
-                                    <svg class="icon content-icon">
+                                    <svg class="icon">
                                         <use href="/build/img/sprite.svg#arrow-down"></use>
                                     </svg>
                                 </button>

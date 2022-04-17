@@ -64,6 +64,8 @@
             <li><a href="/build/index.php" target="_blank">Главная</a></li>
             <br>
             <li><a href="/build/about-main.php" target="_blank">О нас - главная</a></li>
+            <li><a href="/build/about-history.php" target="_blank">О нас - история</a></li>
+            <li><a href="/build/about-structure.php" target="_blank">О нас - структура</a></li>
         </ul>
     </div>
     </body>

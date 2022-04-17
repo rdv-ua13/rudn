@@ -10,7 +10,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -22,7 +22,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -34,7 +34,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -46,7 +46,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -58,7 +58,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -70,7 +70,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -82,7 +82,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -94,7 +94,7 @@
                     <div class="main-slider__slide-link">
                         <a class="btn" href="javascript:;">
                             <span class="content-text content-text--left">Подробнее</span>
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </a>
@@ -104,12 +104,12 @@
             <div class="swiper-navigation">
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev">
-                    <svg class="icon content-icon">
+                    <svg class="icon">
                         <use href="/build/img/sprite.svg#arrow-down"></use>
                     </svg>
                 </div>
                 <div class="swiper-button-next">
-                    <svg class="icon content-icon">
+                    <svg class="icon">
                         <use href="/build/img/sprite.svg#arrow-down"></use>
                     </svg>
                 </div>
@@ -164,12 +164,12 @@
                     </div>
                     <div class="swiper-navigation">
                         <div class="swiper-button-prev">
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </div>
                         <div class="swiper-button-next">
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </div>
@@ -244,7 +244,7 @@
                         <div class="advice__subtitle">Задайте вопрос нашим специалистам и проконсультируйтесь по любому интересующему вопросу</div>
                         <div class="advice__btn">
                             <button class="btn" type="button">
-                                <svg class="icon content-icon">
+                                <svg class="icon">
                                     <use href="/build/img/sprite.svg#chat"></use>
                                 </svg>
                                 <span class="content-text content-text--right">Задать вопрос</span>
@@ -288,12 +288,12 @@
                     </div>
                     <div class="swiper-navigation">
                         <div class="swiper-button-prev">
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </div>
                         <div class="swiper-button-next">
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </div>
@@ -330,7 +330,7 @@
                             <div class="events-calendar-slider__btns">
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#check"></use>
                                         </svg>
                                         <span class="content-text content-text--right">Зарегистрироваться</span>
@@ -338,7 +338,7 @@
                                 </div>
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn btn-square btn--gray6" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#calendar-plus"></use>
                                         </svg>
                                     </button>
@@ -373,7 +373,7 @@
                             <div class="events-calendar-slider__btns">
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#check"></use>
                                         </svg>
                                         <span class="content-text content-text--right">Зарегистрироваться</span>
@@ -381,7 +381,7 @@
                                 </div>
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn btn-square btn--gray6" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#calendar-plus"></use>
                                         </svg>
                                     </button>
@@ -416,7 +416,7 @@
                             <div class="events-calendar-slider__btns">
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#check"></use>
                                         </svg>
                                         <span class="content-text content-text--right">Зарегистрироваться</span>
@@ -424,7 +424,7 @@
                                 </div>
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn btn-square btn--gray6" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#calendar-plus"></use>
                                         </svg>
                                     </button>
@@ -459,7 +459,7 @@
                             <div class="events-calendar-slider__btns">
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#check"></use>
                                         </svg>
                                         <span class="content-text content-text--right">Зарегистрироваться</span>
@@ -467,7 +467,7 @@
                                 </div>
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn btn-square btn--gray6" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#calendar-plus"></use>
                                         </svg>
                                     </button>
@@ -502,7 +502,7 @@
                             <div class="events-calendar-slider__btns">
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#check"></use>
                                         </svg>
                                         <span class="content-text content-text--right">Зарегистрироваться</span>
@@ -510,7 +510,7 @@
                                 </div>
                                 <div class="events-calendar-slider__btn">
                                     <button class="btn btn-square btn--gray6" type="button">
-                                        <svg class="icon content-icon">
+                                        <svg class="icon">
                                             <use href="/build/img/sprite.svg#calendar-plus"></use>
                                         </svg>
                                     </button>
@@ -536,12 +536,12 @@
                         </div>
                         <div class="swiper-navigation">
                             <div class="swiper-button-prev">
-                                <svg class="icon content-icon">
+                                <svg class="icon">
                                     <use href="/build/img/sprite.svg#arrow-down"></use>
                                 </svg>
                             </div>
                             <div class="swiper-button-next">
-                                <svg class="icon content-icon">
+                                <svg class="icon">
                                     <use href="/build/img/sprite.svg#arrow-down"></use>
                                 </svg>
                             </div>
@@ -610,12 +610,12 @@
                     </div>
                     <div class="swiper-navigation">
                         <div class="swiper-button-prev">
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </div>
                         <div class="swiper-button-next">
-                            <svg class="icon content-icon">
+                            <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-down"></use>
                             </svg>
                         </div>
