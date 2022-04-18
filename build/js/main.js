@@ -15,6 +15,7 @@ application.prototype.init = function () {
     this.toggleCollapseMenuItemHeader();
     this.initSliders();
     this.initTabs();
+    this.initAccordion();
 
     this.initMaskedInput();
 }
@@ -340,6 +341,30 @@ application.prototype.initTabs = function () {
                 $(this).closest(".tabs").find(".tab-content__section[data-id='" + currentSelected + "']").addClass("active");
             });
         }
+    }
+}
+// Init accordion
+application.prototype.initAccordion = function () {
+    if ($(".accordion").length) {
+        $(".accordion__collapse").hide();
+        $(".js-accordion-btn").on("click", function () {
+            if (!$(this).hasClass("open")) {
+                $(".accordion__btn").removeClass("open");
+                $(this).closest(".accordion__item").siblings(".accordion__item").removeClass("active");
+                $(this).closest(".accordion__item").siblings(".accordion__item").find(".accordion__collapse").slideUp(150);
+                $(this).addClass("open");
+                $(this).closest(".accordion__item").addClass("active");
+                $(this).closest(".accordion__item").find(".accordion__collapse").removeClass("collapsed");
+                $(this).closest(".accordion__item").find(".accordion__collapse").slideDown(150);
+            } else if ($(this).hasClass("open")) {
+                $(this).removeClass("open");
+                $(this).closest(".accordion__item").removeClass("active");
+                $(this).closest(".accordion__item").find(".accordion__collapse").slideUp(150);
+                setTimeout(function () {
+                    $(this).closest(".accordion__item").find(".accordion__collapse").addClass("collapsed");
+                }, 150);
+            }
+        });
     }
 }
 

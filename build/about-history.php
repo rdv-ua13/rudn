@@ -2,10 +2,10 @@
 
 <div class="container">
     <div class="page-wrapper">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . '/src/pages/components/sidebar.php'); ?>
+        <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/sidebar.php'); ?>
 
         <section class="page-content about-history">
-			<?php include($_SERVER["DOCUMENT_ROOT"] . '/src/pages/components/breadcrumbs.php'); ?>
+			<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
 
             <h1 class="page-content__title">История ВШППиП</h1>
 

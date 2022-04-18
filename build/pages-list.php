@@ -66,6 +66,7 @@
             <li><a href="/build/about-main.php" target="_blank">О нас - главная</a></li>
             <li><a href="/build/about-history.php" target="_blank">О нас - история</a></li>
             <li><a href="/build/about-structure.php" target="_blank">О нас - структура</a></li>
+            <li><a href="/build/about-department.php" target="_blank">О нас - кафедра</a></li>
         </ul>
     </div>
     </body>

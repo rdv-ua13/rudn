@@ -2,10 +2,10 @@
 
 <div class="container">
 	<div class="page-wrapper">
-		<?php include($_SERVER["DOCUMENT_ROOT"] . '/src/pages/components/sidebar.php'); ?>
+		<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/sidebar.php'); ?>
 
 		<section class="page-content about-structure">
-			<?php include($_SERVER["DOCUMENT_ROOT"] . '/src/pages/components/breadcrumbs.php'); ?>
+			<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
 
 			<h1 class="page-content__title">Структура Высшей школы</h1>
 
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <div class="tab-content__pagination">
-							<?php include($_SERVER["DOCUMENT_ROOT"] . '/src/pages/components/pagination.php'); ?>
+							<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/pagination.php'); ?>
                         </div>
                     </section>
                     <section class="tab-content__section tab-content__section-labs" data-id="2">
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                         <div class="tab-content__pagination">
-							<?php include($_SERVER["DOCUMENT_ROOT"] . '/src/pages/components/pagination.php'); ?>
+							<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/pagination.php'); ?>
                         </div>
                     </section>
                 </div>
