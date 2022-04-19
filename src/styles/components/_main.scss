@@ -1314,6 +1314,141 @@
 	}
 }
 
+.about-department-program {
+	&__basic {
+		color: var(--light-black-color);
+	}
+	&__basic-title {
+		margin-bottom: 8px;
+		line-height: 20px;
+	}
+	&__basic-value {
+		color: var(--blue-color);
+		font-size: 16px;
+		line-height: 21px;
+	}
+	&__note-item {
+		position: relative;
+	}
+	&__note-item:first-of-type::before {
+		content: "";
+		position: absolute;
+		background-color: var(--blue-color);
+	}
+	&__note-heading:not(:last-child) {
+		margin-bottom: 5px;
+	}
+	&__note-subheading,
+	&__note-title {
+		line-height: 21px;
+	}
+	&__note-subheading {
+		opacity: 0.7;
+	}
+	&__note-title {
+		margin-bottom: 2px;
+	}
+	&__note-value {
+		color: var(--blue-color);
+		font-size: 32px;
+	}
+	&__note-contacts {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	&__note-contacts-title {
+		margin-bottom: 4px;
+		color: var(--blue-color);
+		font-weight: 600;
+	}
+	&__note-contacts-subtitle {
+		margin-bottom: 12px;
+		opacity: 0.7;
+	}
+	&__note-contacts-content p {
+		margin: 0;
+	}
+	&__note-contacts-content p:not(:last-of-type) {
+		margin-bottom: 12px;
+	}
+	&__note-contacts-btn {
+		min-width: 240px;
+		width: 240px;
+	}
+	&__note-contacts-btn .btn {
+		width: 100%;
+	}
+}
+@media (max-width: 767.98px) {
+	.about-department-program {
+		&__basic-item:not(:last-of-type) {
+			margin-bottom: 40px;
+		}
+		&__note-item:first-of-type {
+			padding-bottom: 30px;
+		}
+		&__note-item:first-of-type::before {
+			right: -10px;
+			bottom: 0;
+			left: -10px;
+			height: 1px;
+		}
+		&__note-item:last-of-type {
+			padding-top: 30px;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.about-department-program {
+		&__basic {
+			margin: 0 -30px -30px 0;
+		}
+		&__basic-item {
+			min-width: calc(100% / 3 - 30px);
+			width: calc(100% / 3 - 30px);
+			margin: 0 30px 30px 0;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.about-department-program {
+		&__basic {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__note {
+			display: flex;
+		}
+		&__note-item {
+			width: 50%;
+		}
+		&__note-item:first-of-type {
+			padding-right: 30px;
+		}
+		&__note-item:first-of-type::before {
+			top: -24px;
+			right: 0;
+			bottom: -24px;
+			width: 1px;
+		}
+		&__note-item:last-of-type {
+			padding-left: 30px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.about-department-program {
+		&__basic {
+			margin: 0 -40px -30px 0;
+		}
+		&__basic-item {
+			min-width: calc(100% / 3 - 40px);
+			width: calc(100% / 3 - 40px);
+			margin: 0 40px 30px 0;
+		}
+	}
+}
+
 
 @media (max-width: 991.98px) {}
 @media (min-width: 992px) {}

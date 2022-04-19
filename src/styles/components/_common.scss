@@ -297,11 +297,13 @@ svg {
 	line-height: 1.2;
 
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
 		margin: 0;
 		padding: 0;
+		overflow: hidden;
 		list-style: none;
 	}
 	&__item {
@@ -1179,8 +1181,6 @@ input.disabled {
 		}
 	}
 }
-
-
 
 
 /*
