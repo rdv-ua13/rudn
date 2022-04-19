@@ -6,7 +6,7 @@
                 <div class="h5 selection-committee__heading">Приёмная комиссия</div>
                 <div class="selection-committee__content">
                     <div class="selection-committee__contacts">
-                        <div class="selection-committee__contacts-item selection-committee__contacts-address mb-auto-desktop">
+                        <div class="selection-committee__contacts-item selection-committee__contacts-address">
                             <div class="selection-committee__contacts-title">Адрес</div>
                             <p>ул. Миклухо-Маклая 6<br>(Главный корпус РУДН, каб. 418)</p>
                         </div>
@@ -43,7 +43,7 @@
                 <div class="h5 selection-committee__heading">Подпишитесь на новости</div>
                 <div class="selection-committee__content flex-fill-desktop">
                     <div class="selection-committee__contacts h-100-desktop">
-                        <div class="selection-committee__contacts-item mb-auto-desktop">
+                        <div class="block-mb-medium selection-committee__contacts-item">
                             <div class="selection-committee__btn">
                                 <button class="btn" type="button">
                                     <span class="content-text">Подписаться</span>
@@ -101,6 +101,7 @@
                     <li><a href="javascript:;">Карта сайта</a></li>
                     <li><a href="javascript:;">Пользовательское соглашение</a></li>
                     <li><a href="javascript:;">Политика по обработке Персональных данных</a></li>
+                    <li><a href="javascript:;">Сделано в STICKYHANDS</a></li>
                 </ul>
             </div>
         </div>

@@ -559,7 +559,7 @@ input.disabled {
 	&__contacts {
 		margin-bottom: 16px;
 	}
-	&__contacts-item:not(:last-of-type) {
+	&:not(.footer__committee-subscription) &__contacts-item:not(:last-of-type) {
 		margin-bottom: 32px;
 	}
 	&__contacts-title {

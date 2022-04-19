@@ -761,7 +761,7 @@ input.disabled {
   margin-bottom: 16px;
 }
 
-.selection-committee__contacts-item:not(:last-of-type) {
+.selection-committee:not(.footer__committee-subscription) .selection-committee__contacts-item:not(:last-of-type) {
   margin-bottom: 32px;
 }
 
@@ -2151,10 +2151,11 @@ input.disabled {
 .footer__socials ul {
   display: flex;
   align-items: center;
+  margin: 0 -8px -8px 0;
 }
 
-.footer__socials li:not(:last-of-type) {
-  margin-right: 8px;
+.footer__socials li {
+  margin: 0 8px 8px 0;
 }
 
 .footer__socials li,
