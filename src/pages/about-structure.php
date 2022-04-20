@@ -153,9 +153,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-content__pagination">
-							<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/pagination.php'); ?>
-                        </div>
+                        <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/pagination.php'); ?>
                     </section>
                 </div>
             </div>

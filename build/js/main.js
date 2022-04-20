@@ -16,6 +16,7 @@ application.prototype.init = function () {
     this.initSliders();
     this.initTabs();
     this.initAccordion();
+    this.initCustomSelect();
 
     this.initMaskedInput();
 }
@@ -367,7 +368,71 @@ application.prototype.initAccordion = function () {
         });
     }
 }
+// Init custom select
+application.prototype.initCustomSelect = function () {
+    if ($(".js-custom-select").length) {
+        $(".js-custom-select").each(function(){
+            var $this = $(this),
+                numberOfOptions = $(this).children("option").length,
+                $selectTitle = null,
+                $list = null,
+                $listItems = null;
 
+            $this.addClass("visually-hidden");
+            if ($this.hasClass("js-custom-select-room")) {
+                $this.wrap("<div class='custom-select custom-select-room'></div>");
+            } else {
+                $this.wrap("<div class='custom-select'></div>");
+            }
+            $this.after("<div class='custom-select__title default'></div>");
+
+            $selectTitle = $this.next(".custom-select__title");
+            $selectTitle.text($this.children("option").eq(0).text());
+
+            $list = $("<ul />", {
+                "class": "custom-select__options"
+            }).insertAfter($selectTitle);
+
+            for (var i = 0; i < numberOfOptions; i++) {
+                $("<li />", {
+                    text: $this.children("option").eq(i).text(),
+                    rel: $this.children("option").eq(i).val(),
+                    class: $this.children("option").eq(i).attr("class"),
+                    style: $this.children("option").eq(i).attr("style")
+                }).appendTo($list);
+            }
+
+            $listItems = $list.children("li");
+
+            $selectTitle.on("click", function(e) {
+                e.stopPropagation();
+                $(".custom-select__title.active").not(this).each(function() {
+                    $(this).removeClass("active").next(".custom-select__options").hide();
+                });
+                $(this).closest(".custom-select").toggleClass("active");
+                $(this).toggleClass("active").next(".custom-select__options").toggle();
+            });
+
+            $listItems.on("click", function(e) {
+                e.stopPropagation();
+                $listItems.removeClass("selected");
+                $(this).not(".custom-room").addClass("selected");
+                $(this).closest(".custom-select").removeClass("active");
+                $selectTitle.text($(this).text()).removeClass("active").removeClass("default");
+                $this.val($(this).attr("rel"));
+                $list.hide();
+            });
+
+            $(document).on("click", function (e) {
+                if (!$(".js-custom-select").is(e.target)) {
+                    $(".custom-select").removeClass("active");
+                    $selectTitle.removeClass("active");
+                    $list.hide();
+                }
+            });
+        });
+    }
+}
 
 // Mobile number mask
 application.prototype.initMaskedInput = function () {

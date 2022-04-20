@@ -69,6 +69,21 @@
             <li><a href="/build/about-department.php" target="_blank">О нас - кафедра</a></li>
             <li><a href="/build/about-department-program.php" target="_blank">О нас - одна программа</a></li>
             <br>
+            <li><a href="/build/about-directorate.php" target="_blank">О нас - дирекция</a></li>
+            <li><a href="/build/about-directorate-person.php" target="_blank">О нас - дирекция/один человек (сделать форму) (не готово)</a></li>
+            <li><a href="/build/about-academic-council.php" target="_blank">О нас - ученый совет</a></li>
+            <li><a href="/build/about-academic-council-person.php" target="_blank">О нас - ученый совет/один человек (не готово)</a></li>
+            <li><a href="/build/about-employees.php" target="_blank">О нас - сотрудники (сделать фильтр) (не готово)</a></li>
+            <li><a href="/build/about-employees-person.php" target="_blank">О нас - сотрудники/один человек (не готово)</a></li>
+            <li><a href="/build/about-graduates.php" target="_blank">О нас - выпускники (не готово)</a></li>
+            <li><a href="/build/about-graduates-person.php" target="_blank">О нас - выпускники/один человек (не готово)</a></li>
+            <li><a href="/build/about-best-graduates.php" target="_blank">О нас - лучшие выпускники (не готово)</a></li>
+            <li><a href="/build/about-best-graduates-person.php" target="_blank">О нас - лучшие выпускники/один человек (не готово)</a></li>
+            <li><a href="/build/about-interactive-map.php" target="_blank">О нас - интерактивная карта (отсутствует контент) (не готово)</a></li>
+            <li><a href="/build/about-question-answer.php" target="_blank">О нас - вопрос-ответ (не готово)</a></li>
+
+
+            <br>
             <!--<li><a href="/build/123.php" target="_blank"> - </a></li>-->
         </ul>
     </div>
