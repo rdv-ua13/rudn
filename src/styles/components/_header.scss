@@ -52,9 +52,11 @@
 .header-actions {
 	display: flex;
 	align-items: center;
-}
-.page-search {
-	display: flex;
+
+	& .field-input--search {
+		padding: 13px 19px;
+		font-size: 15px;
+	}
 }
 .language-version .btn {
 	font-family: "Roboto", sans-serif;

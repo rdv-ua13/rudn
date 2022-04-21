@@ -17,6 +17,7 @@ application.prototype.init = function () {
     this.initTabs();
     this.initAccordion();
     this.initCustomSelect();
+    this.initResetForm();
 
     this.initMaskedInput();
 }
@@ -433,6 +434,18 @@ application.prototype.initCustomSelect = function () {
         });
     }
 }
+// Init reset form data
+application.prototype.initResetForm = function () {
+    var thisResetBtn = $(".btn-reset");
+    $(thisResetBtn).on("click", function () {
+        var thisForm = $(this).closest("form").attr("id");
+        $("#" + thisForm + " select").val("0");
+        $("#" + thisForm + " .custom-select__title").text($("#" + thisForm + " .js-custom-select").find(":selected").text()).addClass("default");
+        $("#" + thisForm + " input:not(input[type='checkbox']), #" + thisForm + " textarea").val("");
+        $("#" + thisForm + " input[type='checkbox']").prop("checked", false);
+    });
+}
+
 
 // Mobile number mask
 application.prototype.initMaskedInput = function () {

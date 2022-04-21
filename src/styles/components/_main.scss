@@ -5,97 +5,6 @@
 	min-width: 375px;
 }
 
-.field-wrapper {
-	display: inline-flex;
-}
-/*.field-wrapper label {
-	display: block;
-	min-height: 68px;
-}
-.field-wrapper .label-text,
-.field-wrapper .sign-tooltip {
-	display: inline-flex;
-	vertical-align: middle;
-	margin-bottom: 8px;
-}
-.field-wrapper .label-text {
-	font-weight: 600;
-	font-size: 13px;
-	line-height: 15px;
-}
-.field-wrapper .required-mark {
-	color: var(--red-color);
-}*/
-.field-wrapper .field-input {
-	position: relative;
-	display: inline-flex;
-	min-width: 100%;
-	min-height: 48px;
-	width: 100%;
-	height: 48px;
-	border: 1px solid var(--blue-color);
-	background-color: var(--white-color);
-	color: var(--gray2-color);
-	font-weight: 500;
-	font-size: 14px;
-	transition: 0.15s ease-in-out;
-}
-.field-wrapper .field-input:not(.field-input--search) {
-	padding: 11px 15px;
-}
-.field-wrapper .field-input--search {
-	padding: 11px 19px;
-	border-color: var(--gray1-color);
-	color: var(--gray4-color);
-}
-
-/*
-.field-wrapper .field-input__btn-additional-color {
-	display: inline-block;
-	padding-top: 8px;
-	border-bottom: 1px dashed;
-	color: var(--red-color);
-	font-weight: 600;
-	font-size: 13px;
-	cursor: pointer;
-}
-.field-wrapper .upload-file {
-	display: none;
-}
-.field-wrapper .upload-area {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 150px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 30px;
-	border: 2px dashed var(--gray5-color);
-	border-radius: 4px;
-	background: var(--gray6-color);
-	text-align: center;
-}
-.field-wrapper .upload-area-info {
-	display: block;
-	margin-bottom: 10px;
-	font-size: 13px;
-	line-height: 1.4;
-}
-.field-wrapper .upload-area-title {
-	display: block;
-	font-weight: 600;
-}*/
-@media (min-width: 992px) {
-	/*.field-wrapper .field-input:hover {
-		border-color: var(--gray3-color);
-	}
-	.field-wrapper .field-input:hover::placeholder {
-		color: var(--gray2-color);
-		transition: 0.15s ease-in-out;
-	}*/
-}
-
 .main-slider {
 	position: relative;
 	margin-bottom: 20px;
@@ -1448,6 +1357,31 @@
 		}
 	}
 }
+
+.about-employees {
+	& .page-content__filter-item .field-input--search {
+		min-width: 0;
+	}
+}
+@media (max-width: 767.98px) {
+	.about-employees {
+		& .page-content__filter-item:not(:last-of-type) {
+			margin-bottom: 16px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.about-employees {
+		& .page-content__filter-item {
+			min-width: calc((100% - 16px) / 2);
+			width: calc((100% - 16px) / 2);
+		}
+		& .page-content__filter-item:not(:last-of-type) {
+			margin-right: 16px;
+		}
+	}
+}
+
 
 
 @media (max-width: 991.98px) {}
