@@ -7,42 +7,13 @@
 			<section class="page-content">
 				<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/breadcrumbs.php'); ?>
 
-				<h1 class="page-content__title">Сотрудники</h1>
-
-                <form id="" class="page-content__filter employees-filter" action="" method="">
-                    <div class="page-content__filter-content">
-                        <div class="page-content__filter-item">
-                            <select class="visually-hidden js-custom-select" name="">
-                                <option class="selected"
-                                        value="0"
-                                        selected
-                                >
-                                    Административно-управленческий персонал-управленческий персонал
-                                </option>
-                                <option value="1">Административно-управленческий персонал 1</option>
-                                <option value="2">Административно-управленческий персонал 2</option>
-                                <option value="3">Административно-управленческий персонал-управленческий персонал 3</option>
-                            </select>
-                        </div>
-                        <div class="page-content__filter-item">
-                            <div class="page-search">
-                                <input id="" class="field-input field-input--search" type="search" name="" placeholder="Поиск сотрудника...">
-                                <button class="btn">
-                                    <svg class="icon">
-                                        <use href="/build/img/sprite.svg#search"></use>
-                                    </svg>
-                                    <span class="content-text content-text--right">Найти</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+				<h1 class="page-content__title">Диссовет</h1>
 
 				<div class="persons">
 					<div class="persons__item">
-                        <div class="persons__view">
-                            <div class="persons__view-content" style="background-image: url('/build/img/person-img1.png');"></div>
-                        </div>
+						<div class="persons__view">
+							<div class="persons__view-content" style="background-image: url('/build/img/person-img1.png');"></div>
+						</div>
 						<div class="persons__info">
 							<div class="h3 persons__title">Горидько Нина Павловна</div>
 							<div class="persons__descr">
@@ -55,8 +26,8 @@
 					</div>
 					<div class="persons__item">
 						<div class="persons__view">
-                            <div class="persons__view-content" style="background-image: url('');"></div>
-                        </div>
+							<div class="persons__view-content" style="background-image: url('');"></div>
+						</div>
 						<div class="persons__info">
 							<div class="h3 persons__title">Диесперова Наталья Александровна</div>
 							<div class="persons__descr">
@@ -70,8 +41,8 @@
 					</div>
 					<div class="persons__item">
 						<div class="persons__view">
-                            <div class="persons__view-content" style="background-image: url('');"></div>
-                        </div>
+							<div class="persons__view-content" style="background-image: url('');"></div>
+						</div>
 						<div class="persons__info">
 							<div class="h3 persons__title">Ермаков Владимир Анатольевич</div>
 							<div class="persons__descr">
@@ -85,8 +56,8 @@
 					</div>
 					<div class="persons__item">
 						<div class="persons__view">
-                            <div class="persons__view-content" style="background-image: url('');"></div>
-                        </div>
+							<div class="persons__view-content" style="background-image: url('');"></div>
+						</div>
 						<div class="persons__info">
 							<div class="h3 persons__title">Горидько Нина Павловна</div>
 							<div class="persons__descr">
@@ -99,8 +70,8 @@
 					</div>
 					<div class="persons__item">
 						<div class="persons__view">
-                            <div class="persons__view-content" style="background-image: url('');"></div>
-                        </div>
+							<div class="persons__view-content" style="background-image: url('');"></div>
+						</div>
 						<div class="persons__info">
 							<div class="h3 persons__title">Диесперова Наталья Александровна</div>
 							<div class="persons__descr">
@@ -114,8 +85,8 @@
 					</div>
 					<div class="persons__item">
 						<div class="persons__view">
-                            <div class="persons__view-content" style="background-image: url('');"></div>
-                        </div>
+							<div class="persons__view-content" style="background-image: url('');"></div>
+						</div>
 						<div class="persons__info">
 							<div class="h3 persons__title">Ермаков Владимир Анатольевич</div>
 							<div class="persons__descr">

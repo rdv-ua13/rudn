@@ -1,7 +1,7 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/header.php'); ?>
 
 	<div class="container">
-		<div class="page-wrapper about-employees">
+		<div class="page-wrapper">
 			<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/sidebar.php'); ?>
 
 			<section class="page-content">
@@ -9,34 +9,34 @@
 
 				<h1 class="page-content__title">Сотрудники</h1>
 
-                <?/* TODO:@dromanov - think about implementation */?>
-                <div class="page-content__filter">
-                    <div class="page-content__filter-item">
-                        <select class="visually-hidden js-custom-select" name="">
-                            <option class="selected"
-                                    value="0"
-                                    selected
-                            >
-                                Административно-управленческий персонал-управленческий персонал
-                            </option>
-                            <option value="1">Административно-управленческий персонал 1</option>
-                            <option value="2">Административно-управленческий персонал 2</option>
-                            <option value="3">Административно-управленческий персонал 3</option>
-                        </select>
+                <form id="" class="page-content__filter employees-filter" action="" method="">
+                    <div class="page-content__filter-content">
+                        <div class="page-content__filter-item">
+                            <select class="visually-hidden js-custom-select" name="">
+                                <option class="selected"
+                                        value="0"
+                                        selected
+                                >
+                                    Административно-управленческий персонал-управленческий персонал
+                                </option>
+                                <option value="1">Административно-управленческий персонал 1</option>
+                                <option value="2">Административно-управленческий персонал 2</option>
+                                <option value="3">Административно-управленческий персонал-управленческий персонал 3</option>
+                            </select>
+                        </div>
+                        <div class="page-content__filter-item">
+                            <div class="page-search">
+                                <input id="" class="field-input field-input--search" type="search" name="" placeholder="Поиск сотрудника...">
+                                <button class="btn">
+                                    <svg class="icon">
+                                        <use href="/build/img/sprite.svg#search"></use>
+                                    </svg>
+                                    <span class="content-text content-text--right">Найти</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="page-content__filter-item">
-                        <form id="" class="page-search" method="" action="">
-                            <input id="" class="field-input field-input--search" type="search" name="" placeholder="Поиск сотрудника...">
-                            <button class="btn">
-                                <svg class="icon">
-                                    <use href="/build/img/sprite.svg#search"></use>
-                                </svg>
-                                <span class="content-text content-text--right">Найти</span>
-                            </button>
-                        </form>
-                    </div>
-
-                </div>
+                </form>
 
 				<div class="persons">
 					<div class="persons__item">

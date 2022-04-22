@@ -1358,30 +1358,70 @@
 	}
 }
 
-.about-employees {
+.employees-filter {
 	& .page-content__filter-item .field-input--search {
 		min-width: 0;
 	}
 }
 @media (max-width: 767.98px) {
-	.about-employees {
+	.employees-filter {
 		& .page-content__filter-item:not(:last-of-type) {
 			margin-bottom: 16px;
 		}
 	}
 }
 @media (min-width: 768px) {
-	.about-employees {
-		& .page-content__filter-item {
-			min-width: calc((100% - 16px) / 2);
-			width: calc((100% - 16px) / 2);
+	.employees-filter {
+		&.page-content__filter {
+			padding: 0;
 		}
-		& .page-content__filter-item:not(:last-of-type) {
-			margin-right: 16px;
+		& .page-content__filter-content {
+			margin: 0 -16px -20px 0
+		}
+		& .page-content__filter-item {
+			min-width: calc((100% - 32px) / 2);
+			width: calc((100% - 32px) / 2);
+			margin-bottom: 0;
+		}
+		& .page-content__filter-item {
+			margin: 0 16px 20px 0;
+		}
+		& .page-content__filter-item .page-search {
+			width: 100%;
 		}
 	}
 }
 
+.priorities-text-block {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		left: 0;
+		height: 1px;
+		background-color: var(--gray2-color);
+	}
+}
+@media (max-width: 991.98px) {
+	.priorities-text-block {
+		padding-bottom: 30px;
+
+		&::before {
+			bottom: 0;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.priorities-text-block {
+		padding: 24px 30px;
+
+		&::before {
+			top: 0;
+		}
+	}
+}
 
 
 @media (max-width: 991.98px) {}

@@ -18,6 +18,7 @@ application.prototype.init = function () {
     this.initAccordion();
     this.initCustomSelect();
     this.initResetForm();
+    this.initModalPopup();
 
     this.initMaskedInput();
 }
@@ -443,6 +444,37 @@ application.prototype.initResetForm = function () {
         $("#" + thisForm + " .custom-select__title").text($("#" + thisForm + " .js-custom-select").find(":selected").text()).addClass("default");
         $("#" + thisForm + " input:not(input[type='checkbox']), #" + thisForm + " textarea").val("");
         $("#" + thisForm + " input[type='checkbox']").prop("checked", false);
+    });
+}
+// Init modal popup
+application.prototype.initModalPopup = function () {
+    $("[data-toggle='modal']").on("click", function(e) {
+        var elemId = $(this).data("target"),
+            currentModal = $("#" + elemId),
+            currentModalOverlay = currentModal.find(".modal-overlay");
+
+        e.preventDefault();
+        $(".modal").not("#" + elemId).removeClass("is-visible");
+        $("#" + elemId).addClass("is-visible");
+
+        if (window.matchMedia("(max-width:991.98px)").matches) {
+            if (!currentModalOverlay.hasClass("desktop-only")) {
+                $("body").addClass("overflow-hidden");
+            }
+        } else if (window.matchMedia("(min-width:992px)").matches) {
+            if (!currentModalOverlay.hasClass("modal-overlay-mobile")) {
+                $("body").addClass("overflow-hidden");
+            }
+        }
+    });
+
+    $(document).on("click", function (e) {
+        if ($(".modal-overlay").is(e.target) || $(".modal-close").is(e.target)) {
+            var elemId = $(e.target).closest(".modal").attr("id");
+            e.stopPropagation();
+            $("body").removeClass("overflow-hidden");
+            $("#" + elemId).removeClass("is-visible");
+        }
     });
 }
 

@@ -107,6 +107,8 @@
         </div>
     </footer>
 
+	<?php include($_SERVER["DOCUMENT_ROOT"] . '/build/components/modals.php'); ?>
+
     <?/*<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>*/?>
     <script src="/build/js/libs.min.js"></script>
     <script src="/build/js/main.js"></script>
