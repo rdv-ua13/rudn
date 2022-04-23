@@ -155,6 +155,18 @@ application.prototype.initSliders = function () {
         new Swiper(".js-news-slider", newsSliderSettings);
     }
 
+    // International news slider
+    if ($(".js-international-news-slider").length) {
+        var internationalNewsSliderSettings = {
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: ".international-news-slider-wrapper .swiper-button-next",
+                prevEl: ".international-news-slider-wrapper .swiper-button-prev",
+            }
+        };
+        new Swiper(".js-international-news-slider", internationalNewsSliderSettings);
+    }
+
     // Events-calendar slider
     if ($(".js-events-calendar-slider").length) {
         var eventsCalendarSliderSettingsHorizontal = {
@@ -323,6 +335,21 @@ application.prototype.initSliders = function () {
         }
     }
 
+    // Science projects slider
+    if ($(".js-science-projects-slider").length) {
+        var scienceProjectsSliderSettings = {
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: ".science-projects-wrapper .swiper-button-next",
+                prevEl: ".science-projects-wrapper .swiper-button-prev",
+            },
+            pagination: {
+                el: ".science-projects-wrapper .swiper-pagination",
+                clickable: true,
+            }
+        };
+        new Swiper(".js-science-projects-slider", scienceProjectsSliderSettings);
+    }
 
 }
 // Init tabs

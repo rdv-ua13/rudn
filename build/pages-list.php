@@ -46,17 +46,21 @@
                 background-color: #000;
             }
             .logo {
+                display: inline-flex;
+                margin-right: 40px;
                 padding: 15px 40px;
-            }
-            .logo img {
-
             }
         </style>
     </head>
 
     <body>
-    <div class="logo">
-        <img src="/build/img/logo-rudn-desktop.png" alt="">
+    <div style="display: flex; align-items:center; margin: 0 0 15px 20px;">
+        <div class="logo"><img src="/build/img/logo-rudn-desktop.png" alt=""></div>
+        <span style="display: inline-flex; align-items:center; font-size: 24px;">
+            <span style="color: forestgreen; font-weight: 600;">38</span>
+            &nbsp;/&nbsp;
+            <span style="font-size: 24px;">55 (всего страниц в макете)</span>
+        </span>
     </div>
 
     <div>
@@ -89,9 +93,9 @@
             <br>
 
             <li><a href="/build/educational-process-current-attestation.php" target="_blank">Учебный процесс - текущая аттестация (отсутствует контент)</a></li>
-            <li><a href="/build/educational-process-course-work.php" target="_blank">Учебный процесс - курсовые и ВКР (не готово)</a></li>
+            <li><a href="/build/educational-process-course-work.php" target="_blank">Учебный процесс - курсовые и ВКР</a></li>
             <li><a href="/build/educational-process-final-certification.php" target="_blank">Учебный процесс - государственная итоговая аттестация (отсутствует контент)</a></li>
-            <li><a href="/build/educational-process-practices-internships.php" target="_blank">Учебный процесс - практики и стажировки (не готово)</a></li>
+            <li><a href="/build/educational-process-practices-internships.php" target="_blank">Учебный процесс - практики и стажировки</a></li>
             <li><a href="/build/educational-process-local-regulations.php" target="_blank">Учебный процесс - локально-нормативные акты</a></li>
             <br>
 
@@ -102,15 +106,16 @@
             <li><a href="/build/entrepreneurship-business-science.php" target="_blank">Предпринимательство - бизнес-наука (добавил h1)</a></li>
             <br>
 
-            <li><a href="/build/international-activity-areas.php" target="_blank">Международная деятельность - направления международной деятельности (не готово)</a></li>
-            <li><a href="/build/international-activity-academic-mobility-programs.php" target="_blank">Международная деятельность - программы академической мобильности (не готово)</a></li>
-            <li><a href="/build/international-activity-international-associations.php" target="_blank">Международная деятельность - международные ассоциации (не готово)</a></li>
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="/build/international-activity-areas.php" target="_blank">Международная деятельность - направления международной деятельности</a></li>
+            <li><a href="/build/international-activity-academic-mobility-programs.php" target="_blank">Международная деятельность - программы академической мобильности</a></li>
+            <li><a href="/build/international-activity-international-associations.php" target="_blank">Международная деятельность - международные ассоциации</a></li>
             <br>
 
-
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="/build/science-priority-research.php" target="_blank">Научная деятельность - приоритетные исследования</a></li>
-            <li><a href="/build/science-projects.php" target="_blank">Научная деятельность - проекты (не готово)</a></li>
-            <li><a href="/build/science-partners.php" target="_blank">Научная деятельность - партнеры (не готово)</a></li>
+            <li><a href="/build/science-projects.php" target="_blank">Научная деятельность - проекты</a></li>
+            <?/*<li><a href="/build/science-partners.php" target="_blank">Научная деятельность - партнеры (не готово)</a></li>*/?>
             <li><a href="/build/science-graduate-school.php" target="_blank">Научная деятельность - аспирантура</a></li>
             <li><a href="/build/science-graduate-school-person.php" target="_blank">Научная деятельность - аспирантура/один человек</a></li>
             <li><a href="/build/science-discouncil.php" target="_blank">Научная деятельность - диссовет</a></li>
