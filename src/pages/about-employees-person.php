@@ -11,7 +11,7 @@
 					<svg class="icon rotate-left">
 						<use href="/build/img/sprite.svg#arrow-down"></use>
 					</svg>
-					<span class="content-text">Все сотрудники</span>
+					<span class="content-text">Все новости</span>
 				</a>
 
 				<div class="persons persons-details persons-details-council">

@@ -57,7 +57,7 @@
     <div style="display: flex; align-items:center; margin: 0 0 15px 20px;">
         <div class="logo"><img src="/build/img/logo-rudn-desktop.png" alt=""></div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">38</span>
+            <span style="color: forestgreen; font-weight: 600;">43</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">55 (всего страниц в макете)</span>
         </span>
@@ -92,6 +92,8 @@
             <li><a href="/build/about-question-answer.php" target="_blank">О нас - вопрос-ответ</a></li>
             <br>
 
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="/build/educational-timetable.php" target="_blank">Учебный процесс - Расписание занятий/Расписание сессий (new)</a></li>
             <li><a href="/build/educational-process-current-attestation.php" target="_blank">Учебный процесс - текущая аттестация (отсутствует контент)</a></li>
             <li><a href="/build/educational-process-course-work.php" target="_blank">Учебный процесс - курсовые и ВКР</a></li>
             <li><a href="/build/educational-process-final-certification.php" target="_blank">Учебный процесс - государственная итоговая аттестация (отсутствует контент)</a></li>
@@ -115,11 +117,17 @@
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="/build/science-priority-research.php" target="_blank">Научная деятельность - приоритетные исследования</a></li>
             <li><a href="/build/science-projects.php" target="_blank">Научная деятельность - проекты</a></li>
-            <?/*<li><a href="/build/science-partners.php" target="_blank">Научная деятельность - партнеры (не готово)</a></li>*/?>
+            <li><a href="/build/science-partners.php" target="_blank">Научная деятельность - партнеры (new)</a></li>
             <li><a href="/build/science-graduate-school.php" target="_blank">Научная деятельность - аспирантура</a></li>
             <li><a href="/build/science-graduate-school-person.php" target="_blank">Научная деятельность - аспирантура/один человек</a></li>
             <li><a href="/build/science-discouncil.php" target="_blank">Научная деятельность - диссовет</a></li>
             <li><a href="/build/science-discouncil-person.php" target="_blank">Научная деятельность - диссовет/один человек</a></li>
+            <br>
+
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="/build/media-news.php" target="_blank">Медиа - Новости (new)</a></li>
+            <li><a href="/build/media-news-details.php" target="_blank">Медиа - Новости / одна новость (new)</a></li>
+            <li><a href="/build/media-events.php" target="_blank">Медиа - Мероприятия (new)</a></li>
 
             <br>
             <!--<li><a href="/build/123.php" target="_blank"> - </a></li>-->
