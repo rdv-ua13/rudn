@@ -19,7 +19,7 @@ application.prototype.init = function () {
     this.initCustomSelect();
     this.initResetForm();
     this.initModalPopup();
-
+    this.initMapContacts();
     this.initMaskedInput();
 }
 
@@ -351,6 +351,18 @@ application.prototype.initSliders = function () {
         new Swiper(".js-science-projects-slider", scienceProjectsSliderSettings);
     }
 
+    // Life associations review slider
+    if ($(".js-life-associations-review-slider").length) {
+        var lifeAssociationsReviewSliderSettings = {
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: ".life-associations-review-wrapper .swiper-button-next",
+                prevEl: ".life-associations-review-wrapper .swiper-button-prev",
+            }
+        };
+        new Swiper(".js-life-associations-review-slider", lifeAssociationsReviewSliderSettings);
+    }
+
 }
 // Init tabs
 application.prototype.initTabs = function () {
@@ -504,8 +516,30 @@ application.prototype.initModalPopup = function () {
         }
     });
 }
+// Init map ".contacts"
+application.prototype.initMapContacts = function () {
+    if($("#contacts_map").length) {
+        let coords = [55.651983,37.499363];
 
+        ymaps.ready(init);
+        function init(){
+            // Создание карты.
+            let myMap = new ymaps.Map("contacts_map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                center: coords,
+                controls: [],
+                zoom: 16,
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
 
+            myPlacemark = new ymaps.Placemark([55.651983,37.499363]);
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        }
+    }
+}
 // Mobile number mask
 application.prototype.initMaskedInput = function () {
     $(".isPhone").mask("+7 (999) 999-99-99", { autoclear: false });

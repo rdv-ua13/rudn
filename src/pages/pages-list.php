@@ -57,7 +57,7 @@
     <div style="display: flex; align-items:center; margin: 0 0 15px 20px;">
         <div class="logo"><img src="/build/img/logo-rudn-desktop.png" alt=""></div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">43</span>
+            <span style="color: forestgreen; font-weight: 600;">52</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">55 (всего страниц в макете)</span>
         </span>
@@ -92,6 +92,10 @@
             <li><a href="/build/about-question-answer.php" target="_blank">О нас - вопрос-ответ</a></li>
             <br>
 
+            <!--<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>-->
+            <li><a href="/build/enrollment.php" target="_blank">Поступление - главная (new)</a></li>
+            <br>
+
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="/build/educational-timetable.php" target="_blank">Учебный процесс - Расписание занятий/Расписание сессий (new)</a></li>
             <li><a href="/build/educational-process-current-attestation.php" target="_blank">Учебный процесс - текущая аттестация (отсутствует контент)</a></li>
@@ -115,6 +119,15 @@
             <br>
 
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="/build/life-student-committee.php" target="_blank">Жизнь ВШППиП - Студенческий комитет (new)</a></li>
+            <li><a href="/build/life-student-committee-events.php" target="_blank">Жизнь ВШППиП - Студенческий комитет + Мероприятия (new)</a></li>
+            <li><a href="/build/life-student-associations.php" target="_blank">Жизнь ВШППиП - Профессиональные студенческие объединения (new)</a></li>
+            <li><a href="/build/life-student-associations-details.php" target="_blank">Жизнь ВШППиП - Профессиональные студенческие объединения / деталка (new)</a></li>
+            <li><a href="/build/life-gallery.php" target="_blank">Жизнь ВШППиП - Фотогалерея (new)</a></li>
+            <li><a href="/build/life-gallery-album.php" target="_blank">Жизнь ВШППиП - Фотогалерея / альбом (new)</a></li>
+            <br>
+
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="/build/science-priority-research.php" target="_blank">Научная деятельность - приоритетные исследования</a></li>
             <li><a href="/build/science-projects.php" target="_blank">Научная деятельность - проекты</a></li>
             <li><a href="/build/science-partners.php" target="_blank">Научная деятельность - партнеры (new)</a></li>
@@ -128,6 +141,10 @@
             <li><a href="/build/media-news.php" target="_blank">Медиа - Новости (new)</a></li>
             <li><a href="/build/media-news-details.php" target="_blank">Медиа - Новости / одна новость (new)</a></li>
             <li><a href="/build/media-events.php" target="_blank">Медиа - Мероприятия (new)</a></li>
+            <br>
+
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
+            <li><a href="/build/contacts.php" target="_blank">Контактная информация (new)</a></li>
 
             <br>
             <!--<li><a href="/build/123.php" target="_blank"> - </a></li>-->
