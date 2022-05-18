@@ -47,7 +47,12 @@
                                 <span class="label-title">
                                     <span class="label-text">Период от</span>
                                 </span>
-                                <input id="" class="field-input field-input--date" type="date" name="" placeholder="Не выбрано">
+                                <div class="field-input-date-container">
+                                    <input id="" class="field-input field-input--date" type="text" name="" placeholder="Не выбрано" readonly="readonly">
+                                    <svg class="icon field-input-date-icon">
+                                        <use href="/build/img/sprite.svg#calendar"></use>
+                                    </svg>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -57,7 +62,12 @@
 							    <span class="label-title">
                                     <span class="label-text">Период до</span>
                                 </span>
-                                <input id="" class="field-input field-input--date" type="date" name="" placeholder="Не выбрано">
+                                <div class="field-input-date-container">
+                                    <input id="" class="field-input field-input--date" type="text" name="" placeholder="Не выбрано" readonly="readonly">
+                                    <svg class="icon field-input-date-icon">
+                                        <use href="/build/img/sprite.svg#calendar"></use>
+                                    </svg>
+                                </div>
 							</div>
 						</div>
 					</div>

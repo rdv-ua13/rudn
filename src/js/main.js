@@ -20,6 +20,7 @@ application.prototype.init = function () {
     this.initResetForm();
     this.initModalPopup();
     this.initMapContacts();
+    this.initDatepicker();
     this.initMaskedInput();
 }
 
@@ -539,6 +540,12 @@ application.prototype.initMapContacts = function () {
             myMap.behaviors.disable('scrollZoom');
         }
     }
+}
+// Init datepicker
+application.prototype.initDatepicker = function () {
+    $(".field-input--date").flatpickr({
+        dateFormat: "d.m.Y",
+    });
 }
 // Mobile number mask
 application.prototype.initMaskedInput = function () {

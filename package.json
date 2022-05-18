@@ -36,6 +36,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "@popperjs/core": "^2.10.2",
+    "flatpickr": "^4.6.13",
     "imagemin": "^7.0.1",
     "jquery": "^3.6.0",
     "jquery-validation": "^1.19.3",

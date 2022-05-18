@@ -2216,6 +2216,19 @@ textarea {
 	resize: none;
 	transition: all 0.15s ease-out;
 }
+.field-input-date-container {
+	position: relative;
+}
+.field-input-date-icon {
+	z-index: 1;
+	content: "";
+	position: absolute;
+	top: 11px;
+	right: 15px;
+	bottom: 11px;
+	pointer-events: none;
+	user-select: none;
+}
 .field-input-range-container {
 	display: flex;
 

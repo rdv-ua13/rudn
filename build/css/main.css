@@ -2,6 +2,8 @@
 
 /* Подключение стилей проекта */
 
+@import '../../node_modules/flatpickr/dist/flatpickr.css';
+
 @font-face {
   font-family: "PF Agora Sans Pro", sans-serif;
   src: url("/build/fonts/PFAgoraSansPro-Bold.eot");
@@ -235,6 +237,8 @@
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
 }
+
+/* Подключение стилей flatpickr */
 
 /* ============= common ============= */
 
@@ -1822,6 +1826,24 @@ textarea {
   padding: 13px 15px;
   resize: none;
   transition: all 0.15s ease-out;
+}
+
+.field-input-date-container {
+  position: relative;
+}
+
+.field-input-date-icon {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  bottom: 11px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .field-input-range-container {
