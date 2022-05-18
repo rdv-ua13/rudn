@@ -2210,12 +2210,22 @@ textarea {
 .custom-select__options li[rel="0"] {
 	display: none;
 }
-
 .field-input.comment-input {
 	min-height: 130px;
 	padding: 13px 15px;
 	resize: none;
 	transition: all 0.15s ease-out;
+}
+.field-input-range-container {
+	display: flex;
+
+	& .field-input-range-1\/2 {
+		min-width: calc((100% - 20px) / 2);
+		width: calc((100% - 20px) / 2);
+	}
+	& .field-input-range-1\/2:not(:last-of-type) {
+		margin-right: 20px;
+	}
 }
 @media (min-width: 992px) {
 	input[type='checkbox']:hover {

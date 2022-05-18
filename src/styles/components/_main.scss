@@ -3412,6 +3412,66 @@
 	}
 }
 
+.enrollment-top-img {
+	border: 1px solid var(--gray6-color);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media (max-width: 767.98px) {
+	.enrollment-top-img {
+		min-width: calc(100vw - 30px);
+		width: calc(100vw - 30px);
+		min-height: calc((100vw - 30px) * 0.42);
+		height: calc((100vw - 30px) * 0.42);
+		background-position: center right;
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.enrollment-top-img {
+		min-width: calc(100vw - 30px);
+		width: calc(100vw - 30px);
+		min-height: calc((100vw - 30px) * 0.35);
+		height: calc((100vw - 30px) * 0.35);
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.enrollment-top-img {
+		min-width: calc(100vw - 40px);
+		width: calc(100vw - 40px);
+		min-height: calc((100vw - 40px) * 0.35);
+		height: calc((100vw - 40px) * 0.35);
+	}
+}
+@media (min-width: 1200px) and (max-width: 1319.98px) {
+	.enrollment-top-img {
+		min-width: calc(100vw - 355px - 40px);
+		width: calc(100vw - 355px - 40px);
+		min-height: calc((100vw - 355px - 40px) * 0.35);
+		height: calc((100vw - 355px - 40px) * 0.35);
+	}
+}
+@media (min-width: 576px) {
+	.enrollment-top-img {
+		background-position: center;
+	}
+}
+@media (min-width: 1320px) {
+	.enrollment-top-img {
+		min-width: calc(1280px - 355px);
+		width: calc(1280px - 355px);
+		min-height: calc((1280px - 355px) * 0.35);
+		height: calc((1280px - 355px) * 0.35);
+	}
+}
+
+.enrollment {
+	& .accordion__collapse-item::before {
+		background-color: var(--gray3-color);
+	}
+}
+@media (max-width: 991.98px) {}
+@media (min-width: 992px) {}
+
 
 @media (max-width: 991.98px) {}
 @media (min-width: 992px) {}

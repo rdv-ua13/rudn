@@ -1824,6 +1824,19 @@ textarea {
   transition: all 0.15s ease-out;
 }
 
+.field-input-range-container {
+  display: flex;
+}
+
+.field-input-range-container .field-input-range-1\/2 {
+  min-width: calc((100% - 20px) / 2);
+  width: calc((100% - 20px) / 2);
+}
+
+.field-input-range-container .field-input-range-1\/2:not(:last-of-type) {
+  margin-right: 20px;
+}
+
 .contact-form__heading,
 .contact-form__body {
   margin-bottom: 24px;
@@ -3745,6 +3758,16 @@ textarea {
   color: #33B3FF;
 }
 
+.enrollment-top-img {
+  border: 1px solid var(--gray6-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.enrollment .accordion__collapse-item::before {
+  background-color: var(--gray3-color);
+}
+
 /* ============= //main ============= */
 
 /* ============= footer ============= */
@@ -3878,6 +3901,10 @@ textarea {
 
   .enrollment-info__item {
     margin: 0 20px 20px 0;
+  }
+
+  .enrollment-top-img {
+    background-position: center;
   }
 }
 
@@ -5470,6 +5497,13 @@ textarea {
     min-width: 452.5px;
     width: 452.5px;
   }
+
+  .enrollment-top-img {
+    min-width: 925px;
+    width: 925px;
+    min-height: 323.75px;
+    height: 323.75px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -6514,6 +6548,14 @@ textarea {
   .enrollment-info__bg {
     bottom: -30px;
   }
+
+  .enrollment-top-img {
+    min-width: calc(100vw - 30px);
+    width: calc(100vw - 30px);
+    min-height: calc((100vw - 30px) * 0.42);
+    height: calc((100vw - 30px) * 0.42);
+    background-position: center right;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -6683,6 +6725,13 @@ textarea {
     min-width: calc((100vw - 30px - 40px) / 3);
     width: calc((100vw - 30px - 40px) / 3);
   }
+
+  .enrollment-top-img {
+    min-width: calc(100vw - 30px);
+    width: calc(100vw - 30px);
+    min-height: calc((100vw - 30px) * 0.35);
+    height: calc((100vw - 30px) * 0.35);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -6823,6 +6872,13 @@ textarea {
     min-width: calc((100vw - 40px - 20px) / 2);
     width: calc((100vw - 40px - 20px) / 2);
   }
+
+  .enrollment-top-img {
+    min-width: calc(100vw - 40px);
+    width: calc(100vw - 40px);
+    min-height: calc((100vw - 40px) * 0.35);
+    height: calc((100vw - 40px) * 0.35);
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1319.98px) {
@@ -6946,6 +7002,13 @@ textarea {
   .enrollment-committee__item {
     min-width: calc((100vw - 355px - 40px - 20px) / 2);
     width: calc((100vw - 355px - 40px - 20px) / 2);
+  }
+
+  .enrollment-top-img {
+    min-width: calc(100vw - 355px - 40px);
+    width: calc(100vw - 355px - 40px);
+    min-height: calc((100vw - 355px - 40px) * 0.35);
+    height: calc((100vw - 355px - 40px) * 0.35);
   }
 }
 

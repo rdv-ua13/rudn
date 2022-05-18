@@ -25,7 +25,7 @@
 
                 <div class="enrollment-info">
                     <div class="enrollment-info__item">
-                        <div class="enrollment-info__bg" style="background-image: url('/build/img/enrollment-bachelor1.png');"></div>
+                        <div class="enrollment-info__bg" style="background-image: url('/build/img/enrollment-bachelor.png');"></div>
                         <div class="enrollment-info__content">
                             <div class="h3 enrollment-info__title">Бакалавриат</div>
                             <div class="enrollment-info__more">
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="enrollment-info__item">
-                        <div class="enrollment-info__bg" style="background-image: url('/build/img/enrollment-magistracy1.png');"></div>
+                        <div class="enrollment-info__bg" style="background-image: url('/build/img/enrollment-magistracy.png');"></div>
                         <div class="enrollment-info__content">
                             <div class="h3 enrollment-info__title">Магистратура</div>
                             <div class="enrollment-info__more">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="enrollment-info__item">
-                        <div class="enrollment-info__bg" style="background-image: url('/build/img/enrollment-graduate-school1.png');"></div>
+                        <div class="enrollment-info__bg" style="background-image: url('/build/img/enrollment-graduate-school.png');"></div>
                         <div class="enrollment-info__content">
                             <div class="h3 enrollment-info__title">Аспирантура</div>
                             <div class="enrollment-info__more">

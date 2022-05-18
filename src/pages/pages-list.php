@@ -57,7 +57,7 @@
     <div style="display: flex; align-items:center; margin: 0 0 15px 20px;">
         <div class="logo"><img src="/build/img/logo-rudn-desktop.png" alt=""></div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">52</span>
+            <span style="color: forestgreen; font-weight: 600;">55</span>
             &nbsp;/&nbsp;
             <span style="font-size: 24px;">55 (всего страниц в макете)</span>
         </span>
@@ -92,8 +92,11 @@
             <li><a href="/build/about-question-answer.php" target="_blank">О нас - вопрос-ответ</a></li>
             <br>
 
-            <!--<li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>-->
+            <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="/build/enrollment.php" target="_blank">Поступление - главная (new)</a></li>
+            <li><a href="/build/enrollment-bachelor.php" target="_blank">Поступление - Бакалавриат (new)</a></li>
+            <li><a href="/build/enrollment-magistracy.php" target="_blank">Поступление - Магистратура (new)</a></li>
+            <li><a href="/build/enrollment-graduate-school.php" target="_blank">Поступление - Аспирантура (new)</a></li>
             <br>
 
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
