@@ -21,7 +21,7 @@ application.prototype.init = function () {
     this.initModalPopup();
     this.initMapContacts();
     this.initDatepicker();
-    this.initMaskedInput();
+    this.setPagesBg();
 }
 
 // Init ".btn-dropdown" behavior
@@ -110,8 +110,8 @@ application.prototype.toggleHeaderMenuBtn = function () {
 }
 // Set behavior of ".header-menu__collapse-menu-item-header"
 application.prototype.toggleCollapseMenuItemHeader = function () {
-    if (window.matchMedia("(min-width: 992px)").matches) {
-        $(".header-menu__collapse-menu-item-header").on("click", function () {
+    if (window.matchMedia("(max-width: 991.98px)").matches) {
+        $(".header-menu__collapse-menu-item-header").not(".disabled-dropdown").on("click", function () {
             if (!$(this).hasClass("open")) {
                 $(".header-menu__collapse-menu-item-header").not(this).next("ul").hide(150);
                 $(this).next("ul").show(150);
@@ -543,11 +543,24 @@ application.prototype.initMapContacts = function () {
 }
 // Init datepicker
 application.prototype.initDatepicker = function () {
-    $(".field-input--date").flatpickr({
-        dateFormat: "d.m.Y",
+    const dateElem = $(".field-input--date");
+
+    flatpickr(dateElem, {
+        "dateFormat": "d.m.Y",
+        "locale": "ru"  // locale for this instance only
     });
 }
-// Mobile number mask
-application.prototype.initMaskedInput = function () {
-    $(".isPhone").mask("+7 (999) 999-99-99", { autoclear: false });
+// Set page's background
+application.prototype.setPagesBg = function () {
+    const elem = $(".js-decor-bg");
+    const elemType = getRandomInt(1, 4);
+
+    elem.removeClass("decor-bg-type-default");
+    elem.addClass("decor-bg-type-" + elemType);
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+    }
 }

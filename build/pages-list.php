@@ -148,9 +148,6 @@
 
             <li style="color: forestgreen; font-size: 18px; font-weight: 700;">Блок готов</li>
             <li><a href="/build/contacts.php" target="_blank">Контактная информация (new)</a></li>
-
-            <br>
-            <!--<li><a href="/build/123.php" target="_blank"> - </a></li>-->
         </ul>
     </div>
     </body>

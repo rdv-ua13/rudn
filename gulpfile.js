@@ -98,6 +98,7 @@ gulp.task("libsJs:build", function () {
     "node_modules/jquery-validation/dist/jquery.validate.js",
     'node_modules/jquery-validation/dist/localization/messages_ru.js',
     'node_modules/flatpickr/dist/flatpickr.min.js',
+    'node_modules/flatpickr/dist/l10n/ru.js',
   ])
     .pipe(concat("libs.min.js"))
     /*.pipe(sourcemaps.init())*/

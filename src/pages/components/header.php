@@ -17,6 +17,49 @@
     <title>Высшая школа промышленной политики и предпринимательства</title>
 </head>
 <body>
+    <div class="decor-bg decor-bg-type-default js-decor-bg">
+        <div class="decor-bg__item">
+            <div class="shadow-circle js-shadow-circle">
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+                <div class="shadow-circle-item"></div>
+            </div>
+            <div class="rhombus-filled js-rhombus-filled">
+                <div class="rhombus-filled-item"></div>
+                <div class="rhombus-filled-item"></div>
+                <div class="rhombus-filled-item"></div>
+                <div class="rhombus-filled-item"></div>
+            </div>
+            <div class="rhombus-circuit js-rhombus-circuit">
+                <div class="rhombus-circuit-item">
+                    <div class="rhombus-circuit-lg"></div>
+                    <div class="rhombus-circuit-md"></div>
+                    <div class="rhombus-circuit-sm"></div>
+                </div>
+                <div class="rhombus-circuit-item">
+                    <div class="rhombus-circuit-lg"></div>
+                    <div class="rhombus-circuit-md"></div>
+                    <div class="rhombus-circuit-sm"></div>
+                </div>
+                <div class="rhombus-circuit-item">
+                    <div class="rhombus-circuit-lg"></div>
+                    <div class="rhombus-circuit-md"></div>
+                    <div class="rhombus-circuit-sm"></div>
+                </div>
+                <div class="rhombus-circuit-item">
+                    <div class="rhombus-circuit-lg"></div>
+                    <div class="rhombus-circuit-md"></div>
+                    <div class="rhombus-circuit-sm"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="container header__container">
             <div class="logo">
@@ -428,7 +471,7 @@
                                 </ul>
                             </div>
                             <div class="header-menu__collapse-menu-item">
-                                <a class="header-menu__collapse-menu-item-header" href="javascript:;">
+                                <a class="header-menu__collapse-menu-item-header header-menu__collapse-menu-item-header disabled-dropdown" href="javascript:;">
                                     <span>Контакты</span>
                                     <svg class="icon mobile-only">
                                         <use href="/build/img/sprite.svg#arrow-down"></use>
@@ -518,4 +561,4 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" style="min-height: 4400px;">
